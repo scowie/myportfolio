@@ -1,8 +1,12 @@
 // 3rd party libraries
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.css'
+
 
 Vue.use(VueRouter)
+Vue.use(VueMaterial)
 
 // local services
 import containerComponent from './components/my-portfolio-container.vue'

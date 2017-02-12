@@ -1,6 +1,6 @@
 
 <template>
-  <div class="my-portfolio-container">
+  <div>
       <router-view></router-view>
   </div>
 </template>

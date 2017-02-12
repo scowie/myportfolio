@@ -12,6 +12,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/app'),
     filename: 'app.min.js'
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
+  },
 	module: {
 		loaders: [
       { test: /\.vue$/, loader: 'vue' },
@@ -28,17 +33,6 @@ module.exports = {
 		]
 	},
 	plugins: [
-    new webpack.ProvidePlugin({ jQuery: "jquery" }),
-    new copy([
-      {
-        from: `${__dirname}/app/config.json`,
-        to: `${__dirname}/dist/app/config.json`
-      },
-      {
-        from: `${__dirname}/consul`,
-        to: `${__dirname}/dist/consul`
-      }
-    ]),
     new html({ hash: true, minify: false, inject: 'head', template: 'index.html' }),
     new progress(),
     (minify)? new webpack.optimize.UglifyJsPlugin({

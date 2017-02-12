@@ -1,24 +1,28 @@
 // 3rd party libraries
-import vue from './services/configured-vue'
-import vueRouter from 'vue-router'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
 
 // local services
 import containerComponent from './components/my-portfolio-container.vue'
 
+const router = new VueRouter({
+  mode: 'history',
+  base: __dirname,
+  routes: [
+    { path: '/', component: containerComponent }
+  ]
+})
 
-window.myPortfolio = {          
-    bootstrap() {
-        var router = new vueRouter({
-            linkActiveClass: 'active'
-        })
+document.addEventListener('DOMContentLoaded', function(){ 
+    new Vue({
+        router
+    }).$mount('#my-portfolio-spa')
+});
 
-        router.map({
-            '/': {
-            component: containerComponent,
-            },
-        })
 
-        router.start(vue.extend({}), '#my-portfolio-spa')
-    }
-}     
-window.myPortfolio.bootstrap()
+
+
+
+

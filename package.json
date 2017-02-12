@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "description": "",
+  "description": "personal work portfolio",
   "main": "index.js",
   "scripts": {
     "install-fix": "npm i --only=\"production\" && npm i --only=\"dev\" --registry=https://registry.npmjs.org",
@@ -13,9 +13,9 @@
   "author": "Stephen Cowie",
   "license": "ISC",
   "dependencies": {
-    "vue": "^1.0.26",
-    "vue-resource": "^1.0.0",
-    "vue-router": "^0.7.13"
+    "vue": "^2.1.10",
+    "vue-resource": "^1.2.0",
+    "vue-router": "^2.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",

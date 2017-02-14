@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-nav></app-nav>
-    <div>
+    <div style="position:relative; border:1px solid white;">
       <router-view></router-view>
     </div>
     <app-footer></app-footer>

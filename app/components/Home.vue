@@ -1,61 +1,51 @@
 <template>
-    <md-layout md-gutter>
+    <div class="main-content">
+        <md-layout md-gutter="24">
 
-        <!--<md-layout md-hide-xsmall md-hide-small md-flex-medium="20">
-        </md-layout>-->
-
-        <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="50">
-            <div>
-                <p>tkjekh jtlkjlk wtj lkwj tk wet kej tlkej tkej tewj te kejew e kewl ewk ewj 
-                    jerwekjtkwejtkwej  klkt w j tkwj tkej tlkjw   ewtljwtj wkjtkwej tkwj tkw tkw t 
-                    jtkejt wjlt wlkjtlkwj tlkw tw</p>
-            </div>
-        </md-layout>
-
-        <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="50">
-            <div class="main-content">
-                <md-card class="card-example">
-                    <md-card-area md-inset>
-                        <md-card-media md-ratio="16:9">
-                        <img src="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" alt="Cascais Street">
-                        </md-card-media>
-
-                        <md-card-header>
-                        <h2 class="md-title">Coffee House</h2>
-                        <div class="md-subhead">
-                            <md-icon>location_on</md-icon>
-                            <span>2 miles</span>
-                        </div>
-                        </md-card-header>
-
+            <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="50">
+                    <md-card class="card-example">
+                        <md-card-area md-inset>
+                            <md-card-header>
+                                <h2 class="md-title">Portfolio Manager</h2>
+                                <div class="md-subhead">
+                                    <md-icon>timeline</md-icon>
+                                    <span>Currently In Progress</span>
+                                </div>
+                            </md-card-header>
+                            <md-card-media md-ratio="16:9">
+                                <img src="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" alt="Cascais Street">
+                            </md-card-media>
+                            <md-card-content>
+                                Managing gallery images
+                            </md-card-content>
+                        </md-card-area>
                         <md-card-content>
-                        Illy Coffee served with a complimentary Leonidas Belgian Chocolate with all beverages.
+                            <h3 class="md-subheading">Tech Used</h3>
+                            <div class="card-reservation">
+                                <md-icon>access_time</md-icon>
+                                <md-button-toggle md-single class="md-button-group">
+                                    <md-button>5:30PM</md-button>
+                                    <md-button>7:30PM</md-button>
+                                    <md-button>9:00PM</md-button>
+                                </md-button-toggle>
+                            </div>
                         </md-card-content>
-                    </md-card-area>
+                        <md-card-actions>
+                            <md-button class="md-primary">Reserve</md-button>
+                        </md-card-actions>
+                    </md-card>
+            </md-layout>
 
-                    <md-card-content>
-                        <h3 class="md-subheading">Today's availability</h3>
-                        <div class="card-reservation">
-                        <md-icon>access_time</md-icon>
-                        <md-button-toggle md-single class="md-button-group">
-                            <md-button>5:30PM</md-button>
-                            <md-button>7:30PM</md-button>
-                            <md-button>9:00PM</md-button>
-                        </md-button-toggle>
-                        </div>
-                    </md-card-content>
+            <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="50">
+                <div class="item-writeup">
+                    <p>tkjekh jtlkjlk wtj lkwj tk wet kej tlkej tkej tewj te kejew e kewl ewk ewj 
+                        jerwekjtkwejtkwej  klkt w j tkwj tkej tlkjw   ewtljwtj wkjtkwej tkwj tkw tkw t 
+                        jtkejt wjlt wlkjtlkwj tlkw tw</p>
+                </div>
+            </md-layout>
 
-                    <md-card-actions>
-                        <md-button class="md-primary">Reserve</md-button>
-                    </md-card-actions>
-                </md-card>
-            </div>
         </md-layout>
-
-        <!--<md-layout md-hide-xsmall md-hide-small md-flex-medium="20">
-        </md-layout>-->
-
-    </md-layout>
+    </div>
 </template>
 
 <script>
@@ -75,8 +65,10 @@ export default {
 
 <style>
     .main-content {
-        margin-top: 20px;
+        margin-top: 80px;
         margin-bottom: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .card-example .md-subhead .md-icon {
         width: 16px;

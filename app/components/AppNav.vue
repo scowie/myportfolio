@@ -1,21 +1,16 @@
 <template>
     <!-- Fixed navbar -->
-    <md-toolbar class="md-medium">
-        <div class="md-toolbar-container">
-            <md-button class="md-icon-button">
-                <md-icon>menu</md-icon>
-            </md-button>
-
-            <h2 class="md-title" style="flex: 1;">Medium</h2>
-
-            <md-button class="md-icon-button">
-                <md-icon>search</md-icon>
-            </md-button>
-
-            <md-button class="md-icon-button">
-                <md-icon>filter_list</md-icon>
+    <md-toolbar class="fixed-top-nav">
+        <div class="md-toolbar-container" style="flex: 1;">
+            <md-button>
+                <h2 class="md-title">Stephen Cowie</h2>
             </md-button>
         </div>
+        <!--<div md-align="end">-->
+            <md-button class="md-icon-button">
+                <md-icon>more_vert</md-cion>
+            </md-button>
+        <!--</div>-->
     </md-toolbar>
 </template>
 
@@ -32,3 +27,11 @@ export default {
     }
 }
 </script>
+
+<style>
+    .fixed-top-nav {
+        z-index:2;
+        position:fixed;
+        width:100%;
+    }
+</style>

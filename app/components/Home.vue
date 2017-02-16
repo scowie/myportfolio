@@ -1,50 +1,70 @@
 <template>
     <div class="main-content">
-        <md-layout md-gutter="24">
+        <md-card md-with-hover class="card-example">
 
-            <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="50">
-                    <md-card class="card-example">
-                        <md-card-area md-inset>
-                            <md-card-header>
-                                <h2 class="md-title">Portfolio Manager</h2>
-                                <div class="md-subhead">
-                                    <md-icon>timeline</md-icon>
-                                    <span>Currently In Progress</span>
-                                </div>
-                            </md-card-header>
-                            <md-card-media md-ratio="16:9">
-                                <img src="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" alt="Cascais Street">
-                            </md-card-media>
-                            <md-card-content>
-                                Managing gallery images
-                            </md-card-content>
-                        </md-card-area>
-                        <md-card-content>
-                            <h3 class="md-subheading">Tech Used</h3>
-                            <div class="card-reservation">
-                                <md-icon>access_time</md-icon>
-                                <md-button-toggle md-single class="md-button-group">
-                                    <md-button>5:30PM</md-button>
-                                    <md-button>7:30PM</md-button>
-                                    <md-button>9:00PM</md-button>
-                                </md-button-toggle>
-                            </div>
-                        </md-card-content>
-                        <md-card-actions>
-                            <md-button class="md-primary">Reserve</md-button>
-                        </md-card-actions>
-                    </md-card>
-            </md-layout>
+            <md-card-area md-inset>
+                <md-card-header>
+                    <h2 class="md-title">Portfolio Manager</h2>
+                    <div class="md-subhead">
+                        <md-icon>timeline</md-icon>
+                        <span>Currently In Progress</span>
+                    </div>
+                    <div md-row style="margin-top:15px">
+                        <md-chip>React.js</md-chip>
+                        <md-chip>Redux</md-chip>
+                        <md-chip>Material-UI</md-chip>
+                        <md-chip>React.js</md-chip>
+                        <md-chip>Redux</md-chip>
+                        <md-chip>Material-UI</md-chip>
+                    </div>
+                </md-card-header>
+             </md-card-area>
 
-            <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="50">
-                <div class="item-writeup">
-                    <p>tkjekh jtlkjlk wtj lkwj tk wet kej tlkej tkej tewj te kejew e kewl ewk ewj 
-                        jerwekjtkwejtkwej  klkt w j tkwj tkej tlkjw   ewtljwtj wkjtkwej tkwj tkw tkw t 
-                        jtkejt wjlt wlkjtlkwj tlkw tw</p>
+            <!--<md-layout md-gutter>
+                <md-layout md-flex-xsmall="100" md-flex-small="33" md-flex-medium="33">-->
+                    <!--<md-card-media>-->
+                  <div>
+                        <div style="width:300px; height:200px; display:inline-block; border:1px solid purple">
+                            <img src="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" alt="Cascais Street">
+                        </div>
+
+                    <!--</md-card-media>-->
+                <!--</md-layout>
+                <md-layout md-flex-xsmall="100" md-flex-small="67" md-flex-medium="67">-->
+                    <!--<md-card-content>-->
+
+
+
+
+                        <div style="min-width:300px; max-width:50%; display:inline-block; vertical-align:top; border:1px solid red;">
+                            <p class="item-writeup-text">
+                                Managing gallery images jkjlkj klj  lkjlkjljlk lkj kljlkj  ljlkjlk lk j 
+                                ljkj lkjkljlkj kl kjk lkjlkjlkj lk lkjl jlkj lkjlkjlkj lkj lk jl jkjlkjj
+                                lk lkj lkjlj lj lkj lkjlkjlkj lkjlkj ljlkj lkj lkj l lj kljlkj lkj lk jlk 
+                                kj ljlkj  jlkj j;kljkljkj jkjkjkl jkjlkj lkj lkjlkjlkjljlkjlk
+                            </p>
+                        </div>
+
+                        
+</div>
+                    <!--</md-card-content>-->
+                  
+                <!--</md-layout>
+            </md-layout>-->
+
+            <md-card-content>
+                <div md-row>
+                    <md-chip>React.js</md-chip>
+                    <md-chip>Redux</md-chip>
+                    <md-chip>Material-UI</md-chip>
                 </div>
-            </md-layout>
-
-        </md-layout>
+                <div md-row>
+                    <md-chip>Node.js</md-chip>
+                    <md-chip>Mongoose</md-chip>
+                    <md-chip>Express</md-chip>
+                </div>
+            </md-card-content>
+        </md-card>
     </div>
 </template>
 
@@ -70,29 +90,6 @@ export default {
         margin-left: 10px;
         margin-right: 10px;
     }
-    .card-example .md-subhead .md-icon {
-        width: 16px;
-        min-width: 16px;
-        height: 16px;
-        min-height: 16px;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .card-example .md-subhead span {
-        vertical-align: middle;
-    }
-    .card-example .card-reservation {
-        margin-top: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .card-example .card-reservation .md-icon {
-        margin: 8px;
-        color: rgba(0, 0, 0, 0.54) !important;
-    }
-    .card-example .card-reservation .md-button {
-        border-radius: 2px !important;
-    }
+
 
 </style>

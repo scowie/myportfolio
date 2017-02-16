@@ -69,6 +69,12 @@
 </template>
 
 <script>
+
+window.onresize = function() {
+    console.log(window.innerWidth)
+    
+}
+
 export default {
     name: 'home',
 

@@ -1,8 +1,8 @@
 <template>
     <md-bottom-bar class="footer">
-        <md-bottom-bar-item md-icon="history">Recents</md-bottom-bar-item>
-        <md-bottom-bar-item md-icon="favorite" md-active>Favorites</md-bottom-bar-item>
-        <md-bottom-bar-item md-icon="near_me">Nearby</md-bottom-bar-item>
+        <md-bottom-bar-item md-icon="info_outline">
+            <span style="font-size:14px;">About This Site</span>
+            </md-bottom-bar-item>
     </md-bottom-bar>
 </template>
 
@@ -10,20 +10,16 @@
 
 export default {
   data () {
-    return {
-      
-    }
+    return {}
   },
-  methods: {
-    
-    }
+  methods: {}
 }
 </script>
 
 <style>
     .footer {
         width: 100%;
-        height: 100px; 
+        height: 60px; 
         position: absolute; 
         bottom: 0px; 
         left: 0px;

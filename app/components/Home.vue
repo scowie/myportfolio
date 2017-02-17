@@ -9,8 +9,8 @@
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
-                                <md-icon>timeline</md-icon>
-                                <span>Currently In Progress</span>
+                                <md-icon class="md-primary">timeline</md-icon>
+                                <span>Currently In Progress...</span>
                             </div>
                         </md-layout>
                     </md-layout>

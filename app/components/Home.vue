@@ -30,7 +30,7 @@
                 <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block; border:1px solid purple">
                     <img src="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" alt="Cascais Street">
                 </div>
-                <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top; border:1px solid red;">
+                <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                     <p class="item-writeup-text">
                         Managing gallery images jkjlkj klj  lkjlkjljlk lkj kljlkj  ljlkjlk lk j 
                         ljkj lkjkljlkj kl kjk lkjlkjlkj lk lkjl jlkj lkjlkjlkj lkj lk jl jkjlkjj

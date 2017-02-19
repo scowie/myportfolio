@@ -22,7 +22,7 @@
             </md-card-area>
             <div>
                 <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block; border:1px solid purple">
-                    <img v-attr="src:https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" >
+                    <img :src="item.imageUrl" >
                 </div>
                 <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                     <p class="item-writeup-text">

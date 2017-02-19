@@ -1,49 +1,44 @@
 <template>
     <div class="main-content">
+        <div v-for="item in items" :key="item.title">
         <md-card md-with-hover class="card-example">
             <md-card-area md-inset>
                 <md-card-header>
                     <md-layout md-gutter>
                         <md-layout>
-                            <h2 class="md-title">Portfolio Manager</h2>
+                            <h2 class="md-title">{{item.title}}</h2>
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
                                 <md-icon class="md-primary">timeline</md-icon>
-                                <span>Currently In Progress...</span>
+                                <span>{{item.timeline}}</span>
                             </div>
                         </md-layout>
                     </md-layout>
                     <div md-row style="margin-top:15px">
-                        <md-chip>React.js</md-chip>
-                        <md-chip>Redux</md-chip>
-                        <md-chip>Material-UI</md-chip>
-                        <md-chip>Node.js</md-chip>
-                        <md-chip>MongoDB</md-chip>
-                        <md-chip>Mongoose</md-chip>
-                        <md-chip>Webpack</md-chip>
-                        <md-chip>AWS S3</md-chip>
+                        <md-chip v-for="tag in item.tags">{{tag}}</md-chip>
                     </div>
                 </md-card-header>
             </md-card-area>
             <div>
                 <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block; border:1px solid purple">
-                    <img src="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" alt="Cascais Street">
+                    <img v-attr="src:https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg" >
                 </div>
                 <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                     <p class="item-writeup-text">
-                        Managing gallery images jkjlkj klj  lkjlkjljlk lkj kljlkj  ljlkjlk lk j 
-                        ljkj lkjkljlkj kl kjk lkjlkjlkj lk lkjl jlkj lkjlkjlkj lkj lk jl jkjlkjj
-                        lk lkj lkjlj lj lkj lkjlkjlkj lkjlkj ljlkj lkj lkj l lj kljlkj lkj lk jlk 
-                        kj ljlkj  jlkj j;kljkljkj jkjkjkl jkjlkj lkj lkjlkjlkjljlkjlk
+                        {{ item.description }}
                     </p>
                 </div>                
             </div>
         </md-card>
+        </div>
     </div>
 </template>
 
 <script>
+    import PortfolioItems from '../data/portfolio-items/portfolio-items'
+
+    const items = PortfolioItems.getAllPortfolioItems()
 
     const setItemWriteUpProp = () => {
         const screenWidth = window.innerWidth
@@ -65,9 +60,28 @@
     export default {
         name: 'home',
         data () {
-            return {}
+            return {
+                items: [
+                    {
+                        title: 'Portfolio Manager',
+                        imageUrl: 'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
+                        timeline: 'Currently in progress...',
+                        description: 'This is a test description',
+                        tags: ['React.js', 'Redux', 'Material-UI', 'Node.js', 'MongoDB', 'Mongoose', 'Webpack', 'AWS S3']
+                    },
+                    {
+                        title: 'Portfolio Manager',
+                        imageUrl: 'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
+                        timeline: 'Currently in progress...',
+                        description: 'This is a test description',
+                        tags: ['React.js', 'Redux', 'Material-UI', 'Node.js', 'MongoDB', 'Mongoose', 'Webpack', 'AWS S3']
+                    }
+                ]
+            }
         },
-        methods: {}
+        methods: {
+
+        }
     }
 
 </script>

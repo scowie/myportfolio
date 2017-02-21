@@ -1,9 +1,9 @@
 <template>
     <div class="main-content">
-        <div v-for="item in items" :key="item.title">
-        <md-card md-with-hover class="card-example">
-            <md-card-area md-inset>
-                <md-card-header>
+        <div v-for="item in items">
+            <md-card md-with-hover>
+            
+                <md-card-header style="padding-bottom:0px; background:rgba(240,240,240,0.9)">
                     <md-layout md-gutter>
                         <md-layout>
                             <h2 class="md-title">{{item.title}}</h2>
@@ -15,22 +15,25 @@
                             </div>
                         </md-layout>
                     </md-layout>
-                    <div md-row style="margin-top:15px">
-                        <md-chip v-for="tag in item.tags">{{tag}}</md-chip>
-                    </div>
+                
+                    <md-chips v-model="item.tags" md-static>
+                        <template scope="chip">{{ chip.value }}</template>
+                    </md-chips>
+            
                 </md-card-header>
-            </md-card-area>
-            <div>
-                <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block; border:1px solid purple">
-                    <img :src="item.imageUrl" >
+            
+                <div style="margin-top:0px">
+                    <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
+                        <img :src="item.imageUrl" >
+                    </div>
+                    <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
+                        <p class="item-writeup-text">
+                            {{ item.description }}
+                        </p>
+                    </div>                
                 </div>
-                <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
-                    <p class="item-writeup-text">
-                        {{ item.description }}
-                    </p>
-                </div>                
-            </div>
-        </md-card>
+            </md-card>
+            <br />
         </div>
     </div>
 </template>

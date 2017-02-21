@@ -38,8 +38,6 @@
 <script>
     import PortfolioItems from '../data/portfolio-items/portfolio-items'
 
-    const items = PortfolioItems.getAllPortfolioItems()
-
     const setItemWriteUpProp = () => {
         const screenWidth = window.innerWidth
         const element = document.getElementById("item-writeup-container")
@@ -61,26 +59,21 @@
         name: 'home',
         data () {
             return {
-                items: [
-                    {
-                        title: 'Portfolio Manager',
-                        imageUrl: 'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
-                        timeline: 'Currently in progress...',
-                        description: 'This is a test description',
-                        tags: ['React.js', 'Redux', 'Material-UI', 'Node.js', 'MongoDB', 'Mongoose', 'Webpack', 'AWS S3']
-                    },
-                    {
-                        title: 'Portfolio Manager',
-                        imageUrl: 'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
-                        timeline: 'Currently in progress...',
-                        description: 'This is a test description',
-                        tags: ['React.js', 'Redux', 'Material-UI', 'Node.js', 'MongoDB', 'Mongoose', 'Webpack', 'AWS S3']
-                    }
-                ]
+                items: false
             }
         },
         methods: {
-
+            loadPortfolioItems() {
+                console.log('called loadPortfolioItems')
+                console.log(PortfolioItems)
+                PortfolioItems.getAllPortfolioItems().then(items => {
+                    console.log('items', items)
+                    this.items = items
+                })
+            }
+        },
+        mounted: function() {
+            this.loadPortfolioItems()
         }
     }
 

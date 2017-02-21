@@ -18,7 +18,7 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: function (resolve) {console.log('called')
+      component: function (resolve) {
         require(['./components/Home.vue'], resolve)
       }
     }

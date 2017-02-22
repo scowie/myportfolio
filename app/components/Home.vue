@@ -1,8 +1,9 @@
 <template>
     <div class="main-content">
-        <div v-for="item in items">
+        <br />
+        <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
             <md-card md-with-hover>
-                <md-card-header style="padding-bottom:0px; background:rgba(240,240,240,0.9)">
+                <md-card-header style="padding-bottom:0px; background:rgba(63,81,181,0.2)">
                     <md-layout md-gutter>
                         <md-layout>
                             <h2 class="md-title">{{item.title}}</h2>
@@ -10,7 +11,7 @@
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
                                 <md-icon class="md-primary">timeline</md-icon>
-                                <span>{{item.timeline}}</span>
+                                <span style="color:#3f51b5; font-size:16px; font-weight:500;">{{item.timeline}}</span>
                             </div>
                         </md-layout>
                     </md-layout>
@@ -29,7 +30,7 @@
                     </div>                
                 </div>
             </md-card>
-            <br />
+            <br /><br />
         </div>
     </div>
 </template>

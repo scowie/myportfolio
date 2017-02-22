@@ -2,7 +2,6 @@
     <div class="main-content">
         <div v-for="item in items">
             <md-card md-with-hover>
-            
                 <md-card-header style="padding-bottom:0px; background:rgba(240,240,240,0.9)">
                     <md-layout md-gutter>
                         <md-layout>
@@ -15,13 +14,10 @@
                             </div>
                         </md-layout>
                     </md-layout>
-                
                     <md-chips v-model="item.tags" md-static>
                         <template scope="chip">{{ chip.value }}</template>
                     </md-chips>
-            
                 </md-card-header>
-            
                 <div style="margin-top:0px">
                     <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
                         <img :src="item.imageUrl" >

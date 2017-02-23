@@ -5,8 +5,9 @@
             <md-card md-with-hover>
                 <md-card-header style="padding-bottom:0px; background:rgba(63,81,181,0.05)">
                     <md-layout md-gutter>
-                        <md-layout>
+                        <md-layout md-column>
                             <h1 class="md-title">{{item.title}}</h1>
+                            <h3 class="md-subhead">{{item.subheader}}</h3>
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
@@ -14,6 +15,9 @@
                                 <span style="color:#3f51b5; font-size:16px; font-weight:500;">{{item.timeline}}</span>
                             </div>
                         </md-layout>
+                        <!--<md-layout>
+
+                        </md-layout>-->
                     </md-layout>
                     <md-chips v-model="item.tags" md-static>
                         <template scope="chip"><a :href="chip.value.link">{{ chip.value.label }}</a></template>

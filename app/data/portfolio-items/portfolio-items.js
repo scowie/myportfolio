@@ -1,6 +1,7 @@
 const portfolioItems = [
   {
     title: 'Portfolio Manager',
+    subheader: 'Subhead',
     imageUrl: 'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
     timeline: 'Currently in progress...',
     description: 'This is a test description',

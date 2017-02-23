@@ -3,10 +3,10 @@
         <br />
         <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
             <md-card md-with-hover>
-                <md-card-header style="padding-bottom:0px; background:rgba(63,81,181,0.2)">
+                <md-card-header style="padding-bottom:0px; background:rgba(63,81,181,0.05)">
                     <md-layout md-gutter>
                         <md-layout>
-                            <h2 class="md-title">{{item.title}}</h2>
+                            <h1 class="md-title">{{item.title}}</h1>
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
@@ -16,7 +16,7 @@
                         </md-layout>
                     </md-layout>
                     <md-chips v-model="item.tags" md-static>
-                        <template scope="chip">{{ chip.value }}</template>
+                        <template scope="chip"><a :href="chip.value.link">{{ chip.value.label }}</a></template>
                     </md-chips>
                 </md-card-header>
                 <div style="margin-top:0px">

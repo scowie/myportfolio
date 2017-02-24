@@ -1,27 +1,45 @@
 <template>
     <div>
-    <!-- Fixed navbar -->
-    <md-toolbar class="fixed-top-nav">
-        <div class="md-toolbar-container" style="flex: 1;">
-            <md-button>
+        <!-- Fixed navbar -->
+        <md-toolbar class="fixed-top-nav">
+            <div class="md-toolbar-container" style="flex: 1;">
+                <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
+                    <md-icon>menu</md-cion>
+                </md-button>
+                
                 <h2 class="md-title">Stephen Cowie</h2>
-            </md-button>
-        </div>
-       
-        <md-button class="md-icon-button" @click.native="toggleRightSidenav">
-            <md-icon>more_vert</md-cion>
-        </md-button>
-     
-    </md-toolbar>
-    <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
-        <md-toolbar>
-            <div class="md-toolbar-container">
-                <h3 class="md-title">Sidenav content</h3>
+                
             </div>
+            
+            <md-speed-dial>
+                <md-button class="md-fab md-mini md-primary" md-fab-trigger>
+                    <md-icon md-icon-morph>close</md-icon>
+                    <md-icon>share</md-icon>
+                </md-button>
+            </md-speed-dial>
+        
         </md-toolbar>
+        <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
+            <md-toolbar>
+                <div class="md-toolbar-container">
+                    <h3 class="md-title">Stephen Cowie</h3>
+                </div>
+            </md-toolbar>
+            <md-list>
+                <md-list-item>
+                    <span>cowiestephenjames@gmail.com</span>
+                </md-list-item>
+                <md-list-item>
+                    <span>scowie</span>
+                    <md-icon>github</md-icon>
+                </md-list-item>
+            </md-list>
+            <md-button class="md-raised md-accent" @click.native="closeLeftSidenav">Close</md-button>
+        </md-sidenav>
+   
+        <div style="position:relative; overflow:hidden; z-index:2; top:64px; width:100%; height: 250px; border:1px solid red;">
+        </div>
 
-        <md-button class="md-raised md-accent" @click.native="closeRightSidenav">Close</md-button>
-    </md-sidenav>
     </div>
 </template>
 
@@ -34,11 +52,11 @@ export default {
     }
   },
   methods: {
-        toggleRightSidenav() {
-            this.$refs.rightSidenav.toggle();
+        toggleLeftSidenav() {
+            this.$refs.leftSidenav.toggle();
         },
-        closeRightSidenav() {
-            this.$refs.rightSidenav.close();
+        closeLeftSidenav() {
+            this.$refs.leftSidenav.close();
         },
         open(ref) {
             console.log('Opened: ' + ref);

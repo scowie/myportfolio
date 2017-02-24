@@ -13,8 +13,8 @@
             
             <md-speed-dial>
                 <md-button class="md-fab md-mini md-primary" md-fab-trigger>
-                    <md-icon md-icon-morph>close</md-icon>
-                    <md-icon>share</md-icon>
+                    <md-icon md-icon-morph @click.native="toggleAboutMe">close</md-icon>
+                    <md-icon @click.native="toggleAboutMe">share</md-icon>
                 </md-button>
             </md-speed-dial>
         
@@ -37,7 +37,7 @@
             <md-button class="md-raised md-accent" @click.native="closeLeftSidenav">Close</md-button>
         </md-sidenav>
    
-        <div style="position:relative; overflow:hidden; z-index:2; top:64px; width:100%; height: 250px; border:1px solid red;">
+        <div id="about-me">
         </div>
 
     </div>
@@ -58,6 +58,14 @@ export default {
         closeLeftSidenav() {
             this.$refs.leftSidenav.close();
         },
+        toggleAboutMe() {console.log('called toggle')
+            const el = document.getElementById("about-me")
+            if(!el.style.height || el.style.height == "0px") {
+                el.style.height = "250px"
+            } else {
+                el.style.height = "0px"
+            }
+        },
         open(ref) {
             console.log('Opened: ' + ref);
         },
@@ -73,5 +81,17 @@ export default {
         z-index:3;
         position:fixed;
         width:100%;
+    }
+
+    #about-me {
+        position:relative; 
+        overflow:hidden; 
+        z-index:2; 
+        top:64px; 
+        width:100%; 
+        height: 0px; 
+        border:1px solid red;
+        -webkit-transition: height 1s; /* Safari */
+        transition: height 1s;
     }
 </style>

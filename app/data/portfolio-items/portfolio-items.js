@@ -3,7 +3,7 @@ const portfolioItems = [
     title: 'Portfolio Manager',
     subheader: 'Subhead',
     imageUrl: 'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
-    timeline: 'Currently in progress...',
+    timeline: '2016',
     description: 'This is a test description',
     tags: [
         {label: 'React.js', link: 'https://facebook.github.io/react/'},

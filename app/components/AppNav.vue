@@ -13,8 +13,8 @@
             
             <md-speed-dial>
                 <md-button class="md-fab md-mini md-primary" md-fab-trigger>
-                    <md-icon md-icon-morph @click.native="toggleAboutMe">close</md-icon>
-                    <md-icon @click.native="toggleAboutMe">share</md-icon>
+                    <md-icon md-icon-morph @click.native="toggleAboutMe">chevron_left</md-icon>
+                    <md-icon @click.native="toggleAboutMe">expand_more</md-icon>
                 </md-button>
             </md-speed-dial>
         

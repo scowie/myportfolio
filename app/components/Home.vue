@@ -22,7 +22,7 @@
                 </md-card-header>
                 <div style="margin-top:0px">
                     <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
-                        <img :src="item.imageUrl" >
+                        <progressive-img :src="item.imageUrl" >
                     </div>
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p class="item-writeup-text">

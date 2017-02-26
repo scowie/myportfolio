@@ -67,7 +67,7 @@ const portfolioItems = [
 
 class PortfolioItems {
 
-  static getAllPortfolioItems() {console.log('getAllPortfolioItems')
+  static getAllPortfolioItems() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(Object.assign([], portfolioItems));

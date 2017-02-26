@@ -8,9 +8,6 @@ import VueProgressiveImage from 'vue-progressive-image'
 
 import 'vue-material/dist/vue-material.css'
 import '../node_modules/magnific-popup/dist/magnific-popup.css'
-import '../node_modules/magnific-popup/dist/jquery.magnific-popup.js'
-
-
 
 Vue.use(VueRouter)
 Vue.use(VueMaterial)

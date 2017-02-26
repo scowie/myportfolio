@@ -22,12 +22,12 @@
                 </md-card-header>
                 <div style="margin-top:0px">
                     <div 
-                        style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;"
-                        class="steven">
+                        class="image-container"
+                        style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
+                        <a :href="item.imageUrl">
                         <progressive-img :src="item.imageUrl" >
+                        </a>
                     </div>
-                    <a class="steve" href="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg">Open popup</a>
-
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p class="item-writeup-text">
                             {{ item.description }}
@@ -43,12 +43,6 @@
 <script>
     import PortfolioItems from '../data/portfolio-items/portfolio-items'
     import $ from 'jquery'
-    
-
-    // $(document).ready(function() {console.log(
-    //     $('.image-container').width()
-    // )
-    // })
 
     const setItemWriteUpProp = () => {
         const screenWidth = window.innerWidth
@@ -58,16 +52,16 @@
         }    
     }
 
-    const initializeMagnificPopup = () => {console.log('initializing popup')
-        const element = $('.steve')
-        if(element) {
-           $('.steve').magnificPopup({
+    const initializeMagnificPopup = () => {
+        const imageContainer = $('.image-container')
+        if(imageContainer) {
+            $('.image-container').magnificPopup({
+                delegate: 'a',
                 type:'image'
-           })
-            }
+            })
         }
+    }
     
-
     let stateCheck = setInterval(() => {
     if (document.readyState === 'complete') {
         clearInterval(stateCheck)
@@ -87,17 +81,13 @@
         },
         methods: {
             loadPortfolioItems() {
-                console.log('called loadPortfolioItems')
-                console.log(PortfolioItems)
                 PortfolioItems.getAllPortfolioItems().then(items => {
-                    console.log('items', items)
                     this.items = items
                 })
             }
         },
         mounted: function() {
             this.loadPortfolioItems()
-            console.log($('.steve'))
         }
     }
 

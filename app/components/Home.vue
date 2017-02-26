@@ -27,6 +27,9 @@
                         <a :href="item.imageUrl">
                         <progressive-img :src="item.imageUrl" >
                         </a>
+                        <a :href="item.imageUrl">
+                        <progressive-img :src="item.imageUrl" >
+                        </a>
                     </div>
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p class="item-writeup-text">
@@ -55,9 +58,14 @@
     const initializeMagnificPopup = () => {
         const imageContainer = $('.image-container')
         if(imageContainer) {
-            $('.image-container').magnificPopup({
-                delegate: 'a',
-                type:'image'
+            $('.image-container').each(function() {
+                $(this).magnificPopup({
+                    delegate: 'a',
+                    type:'image',
+                    gallery: {
+                        enabled: true
+                    }
+                })
             })
         }
     }

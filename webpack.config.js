@@ -33,6 +33,7 @@ module.exports = {
 		]
 	},
 	plugins: [
+    new webpack.ProvidePlugin({ jQuery: "jquery" }),
     new html({ hash: true, minify: false, inject: 'head', template: 'index.html' }),
     new progress(),
     (minify)? new webpack.optimize.UglifyJsPlugin({

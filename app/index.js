@@ -1,10 +1,15 @@
 // 3rd party libraries
+import $ from 'jquery'
+import magnificPopup from 'magnific-popup'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 import VueProgressiveImage from 'vue-progressive-image'
 
 import 'vue-material/dist/vue-material.css'
+import '../node_modules/magnific-popup/dist/magnific-popup.css'
+import '../node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+
 
 
 Vue.use(VueRouter)

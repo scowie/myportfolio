@@ -21,9 +21,13 @@
                     </md-chips>
                 </md-card-header>
                 <div style="margin-top:0px">
-                    <div style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
+                    <div 
+                        style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;"
+                        class="steven">
                         <progressive-img :src="item.imageUrl" >
                     </div>
+                    <a class="steve" href="https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg">Open popup</a>
+
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p class="item-writeup-text">
                             {{ item.description }}
@@ -38,6 +42,13 @@
 
 <script>
     import PortfolioItems from '../data/portfolio-items/portfolio-items'
+    import $ from 'jquery'
+    
+
+    // $(document).ready(function() {console.log(
+    //     $('.image-container').width()
+    // )
+    // })
 
     const setItemWriteUpProp = () => {
         const screenWidth = window.innerWidth
@@ -47,10 +58,21 @@
         }    
     }
 
+    const initializeMagnificPopup = () => {console.log('initializing popup')
+        const element = $('.steve')
+        if(element) {
+           $('.steve').magnificPopup({
+                type:'image'
+           })
+            }
+        }
+    
+
     let stateCheck = setInterval(() => {
     if (document.readyState === 'complete') {
         clearInterval(stateCheck)
         setItemWriteUpProp()
+        initializeMagnificPopup()
     }
     }, 100)
 
@@ -75,6 +97,7 @@
         },
         mounted: function() {
             this.loadPortfolioItems()
+            console.log($('.steve'))
         }
     }
 

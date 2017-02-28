@@ -60,7 +60,8 @@
         if(imageContainer) {
             $('.image-container').each(function() {
                 $(this)
-                .slick()
+                .slick({
+                })
                 .magnificPopup({
                     delegate: 'a:not(.slick-cloned)',
                     type:'image',

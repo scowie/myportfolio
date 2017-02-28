@@ -12,7 +12,7 @@
             </div>
             
             <md-speed-dial>
-                <md-button class="md-fab md-mini md-primary" md-fab-trigger>
+                <md-button style="border:none; box-shadow: 0px 0px" class="md-fab md-mini md-primary" md-fab-trigger>
                     <md-icon md-icon-morph @click.native="toggleAboutMe">chevron_left</md-icon>
                     <md-icon @click.native="toggleAboutMe">expand_more</md-icon>
                 </md-button>

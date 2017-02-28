@@ -59,8 +59,10 @@
         const imageContainer = $('.image-container')
         if(imageContainer) {
             $('.image-container').each(function() {
-                $(this).magnificPopup({
-                    delegate: 'a',
+                $(this)
+                .slick()
+                .magnificPopup({
+                    delegate: 'a:not(.slick-cloned)',
                     type:'image',
                     gallery: {
                         enabled: true

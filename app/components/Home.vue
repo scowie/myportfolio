@@ -17,7 +17,7 @@
                         </md-layout>
                     </md-layout>
                     <md-chips v-model="item.tags" md-static>
-                        <template scope="chip"><a :href="chip.value.link">{{ chip.value.label }}</a></template>
+                        <template scope="chip"><a :href="chip.value.link" target="_blank">{{ chip.value.label }}</a></template>
                     </md-chips>
                 </md-card-header>
                 <div style="margin-top:0px">

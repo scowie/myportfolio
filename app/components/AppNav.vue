@@ -13,7 +13,7 @@
             
             <md-speed-dial>
                 <md-button style="border:none; box-shadow: 0px 0px" class="md-fab md-mini md-primary" md-fab-trigger>
-                    <md-icon md-icon-morph @click.native="toggleAboutMe">chevron_left</md-icon>
+                    <md-icon md-icon-morph @click.native="toggleAboutMe">expand_less</md-icon>
                     <md-icon @click.native="toggleAboutMe">expand_more</md-icon>
                 </md-button>
             </md-speed-dial>
@@ -22,6 +22,10 @@
         <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
             <md-toolbar>
                 <div class="md-toolbar-container">
+                    <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
+                        <md-icon>navigate_before</md-cion>
+                    </md-button>
+
                     <h3 class="md-title">Stephen Cowie</h3>
                 </div>
             </md-toolbar>
@@ -112,7 +116,6 @@
                    <span>stephen_cowie</span>
                 </md-list-item>
             </md-list>
-            <md-button class="md-raised md-accent" @click.native="closeLeftSidenav">Close</md-button>
         </md-sidenav>
    
         <div id="about-me">

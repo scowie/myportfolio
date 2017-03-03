@@ -47,11 +47,19 @@
     import PortfolioItems from '../data/portfolio-items/portfolio-items'
     import $ from 'jquery'
 
-    const setItemWriteUpProp = () => {
+    const setItemWriteUpProp = () => {console.log('setting item prop')
         const screenWidth = window.innerWidth
         const element = document.getElementById("item-writeup-container")
         if(element){
             element.style.maxWidth = `${screenWidth - 360}px`
+        }    
+    }
+
+    const setAboutMeWriteUpProp = () => {console.log('setting about me')
+        const screenWidth = window.innerWidth
+        const element = document.getElementById("about-me-writeup-container")
+        if(element){
+            element.style.maxWidth = `${screenWidth - 220}px`
         }    
     }
 
@@ -77,11 +85,15 @@
     if (document.readyState === 'complete') {
         clearInterval(stateCheck)
         setItemWriteUpProp()
+        setAboutMeWriteUpProp()
         initializeMagnificPopup()
     }
     }, 100)
 
-    window.onresize = setItemWriteUpProp
+    window.onresize = () => {
+        setItemWriteUpProp()
+        setAboutMeWriteUpProp()
+    }
 
     export default {
         name: 'home',

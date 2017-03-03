@@ -120,12 +120,23 @@
    
         <div id="about-me">
 
+            <div style="height:185x; width:180px; border:1px solid red; margin-top:20px; margin-left:20px; display:inline-block;">
+                <img src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
+            </div>
+  
+             <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top; border:1px solid red;">
+                <p class="about-me-writeup-text">
+                    Testing...kjfkasjfkls  dksjfklas fakj kj flkjs akf klasj faksj fklasjlfkj sklf slk jflkasj fksj f 
+                    ljflks fklasj dfksj flk  sjflkasj fkjaslkf jskljfalksj flka flkas jl' falks fkljskf askl flksa jfk 
+                     ljfask jflkasj flkasjflkajs flkj slkfjaskl jflkasj flkas '
+                </p>
+            </div>   
         </div>
-
     </div>
 </template>
 
 <script>
+
 
 export default {
   data () {
@@ -175,5 +186,10 @@ export default {
         border:1px solid red;
         -webkit-transition: height 1s; /* Safari */
         transition: height 1s;
+    }
+
+    .about-me-writeup-text {
+        margin-top:0px;
+        font-size:14px;
     }
 </style>

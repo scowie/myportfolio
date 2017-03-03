@@ -120,7 +120,7 @@
    
         <div id="about-me">
 
-            <div style="height:185x; width:180px; border:1px solid red; margin-top:20px; margin-left:20px; display:inline-block;">
+            <div style="height:185x; width:180px; border:1px solid red; margin-top:20px; margin-left:20px; margin-bottom:20px; display:inline-block;">
                 <img src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
             </div>
   
@@ -154,7 +154,7 @@ export default {
         toggleAboutMe() {console.log('called toggle')
             const el = document.getElementById("about-me")
             if(!el.style.height || el.style.height == "0px") {
-                el.style.height = "250px"
+                el.style.height = "229px"
                 setTimeout(() => {
                     el.style.height = "auto"
                 }, 2000)

@@ -155,6 +155,9 @@ export default {
             const el = document.getElementById("about-me")
             if(!el.style.height || el.style.height == "0px") {
                 el.style.height = "250px"
+                setTimeout(() => {
+                    el.style.height = "auto"
+                }, 2000)
             } else {
                 el.style.height = "0px"
             }

@@ -120,7 +120,7 @@
    
         <div id="about-me">
 
-            <div style="height:185x; width:180px; border:1px solid red; margin-top:20px; margin-left:20px; margin-bottom:20px; display:inline-block;">
+            <div id="about-me-image-container" style="height:185x; width:180px; border:1px solid red; margin-top:20px; margin-left:20px; display:inline-block;">
                 <img src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
             </div>
   
@@ -137,39 +137,70 @@
 
 <script>
 
+   import $ from 'jquery'
 
-export default {
-  data () {
-    return {
-      
+    const getAppropriateHeightForAboutMe = () => {
+        let imgHeight = document.getElementById("about-me-image-container").clientHeight
+        let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
+        let writeupLeftPos = $("#about-me-writeup-container").position().left
+        let appropriateHeight
+        if(writeupLeftPos > 100) {
+            appropriateHeight = imgHeight+45
+        } else {
+            appropriateHeight = imgHeight+45+writeupHeight
+        }
+        return appropriateHeight
     }
-  },
-  methods: {
-        toggleLeftSidenav() {
-            this.$refs.leftSidenav.toggle();
-        },
-        closeLeftSidenav() {
-            this.$refs.leftSidenav.close();
-        },
-        toggleAboutMe() {console.log('called toggle')
-            const el = document.getElementById("about-me")
-            if(!el.style.height || el.style.height == "0px") {
-                el.style.height = "229px"
-                setTimeout(() => {
-                    el.style.height = "auto"
-                }, 2000)
-            } else {
-                el.style.height = "0px"
+    
+    const setAppropriateHeightForAboutMe = () => {console.log('yes?')
+        document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
+    }
+
+
+    export default {
+    data () {
+        return {
+        
+        }
+    },
+    methods: {
+            toggleLeftSidenav() {
+                this.$refs.leftSidenav.toggle();
+            },
+            closeLeftSidenav() {
+                this.$refs.leftSidenav.close();
+            },
+            toggleAboutMe() {console.log('called toggle')
+                const el = document.getElementById("about-me")
+                if(!el.style.height || el.style.height == "0px") {
+                    // let ht1 = document.getElementById("about-me-image-container").clientHeight
+                    // let ht2 = document.getElementById("about-me-writeup-container").clientHeight    
+                    // let h
+                    // console.log(ht1+ht2)
+                    // console.log(el.clientHeight)  
+                    // console.log($("#about-me-writeup-container").position().left)    
+                    // if($("#about-me-writeup-container").position().left > 100){
+                    //     h = ht1+45
+                    // } else {
+                    //     h = ht1+45+ht2
+                    //     console.log('h', h)
+                    // }  
+                    // console.log(`${h}px`)
+                    // el.style.height = `${h}px`
+                    setAppropriateHeightForAboutMe()
+                } else {
+                    console.log('here')
+                    el.style.height = "0px"
+                }
+            },
+            open(ref) {
+                console.log('Opened: ' + ref);
+            },
+            close(ref) {
+                console.log('Closed: ' + ref);
             }
-        },
-        open(ref) {
-            console.log('Opened: ' + ref);
-        },
-        close(ref) {
-            console.log('Closed: ' + ref);
         }
     }
-}
 </script>
 
 <style>

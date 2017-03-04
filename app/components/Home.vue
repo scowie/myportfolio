@@ -55,6 +55,23 @@
         }    
     }
 
+    const getAppropriateHeightForAboutMe = () => {
+        let imgHeight = document.getElementById("about-me-image-container").clientHeight
+        let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
+        let writeupLeftPos = $("#about-me-writeup-container").position().left
+        let appropriateHeight
+        if(writeupLeftPos > 100) {
+            appropriateHeight = imgHeight+45
+        } else {
+            appropriateHeight = imgHeight+45+writeupHeight
+        }
+        return appropriateHeight
+    }
+    
+    const setAppropriateHeightForAboutMe = () => {console.log('yes?')
+        document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
+    }
+
     const setAboutMeWriteUpProp = () => {console.log('setting about me')
         const screenWidth = window.innerWidth
         const element = document.getElementById("about-me-writeup-container")
@@ -93,6 +110,9 @@
     window.onresize = () => {
         setItemWriteUpProp()
         setAboutMeWriteUpProp()
+        if(document.getElementById("about-me").style.height){
+            setAppropriateHeightForAboutMe()
+        }
     }
 
     export default {

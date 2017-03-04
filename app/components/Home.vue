@@ -24,11 +24,8 @@
                     <div 
                         class="image-container"
                         style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
-                        <a :href="item.imageUrl">
-                        <progressive-img :src="item.imageUrl" >
-                        </a>
-                        <a :href="item.imageUrl">
-                        <progressive-img :src="item.imageUrl" >
+                        <a v-for="imgUrl in item.imageUrls" :href="imgUrl">
+                        <progressive-img :src="imgUrl" >
                         </a>
                     </div>
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">

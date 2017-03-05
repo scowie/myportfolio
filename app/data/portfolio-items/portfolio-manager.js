@@ -2,9 +2,10 @@ const PortfolioManager = {
     title: 'Portfolio Manager',
     subheader: 'Content Management System for Artists and Photographers',
     imageUrls: [
-        'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
-        'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg',
-        'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg'
+        'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-05+at+7.17.29+AM.png',
+        'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-05+at+7.23.20+AM.png',
+        'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-05+at+7.30.55+AM.png',
+        'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-05+at+7.34.23+AM.png'
     ],
     timeline: '2016',
     description: 'This is a test description',

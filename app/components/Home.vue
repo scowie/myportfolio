@@ -29,7 +29,7 @@
                         </a>
                     </div>
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
-                        <p class="item-writeup-text">
+                        <p v-html="item.description" class="item-writeup-text" style="text-align:justify">
                             {{ item.description }}
                         </p>
                     </div>                
@@ -45,10 +45,13 @@
     import $ from 'jquery'
 
     const setItemWriteUpProp = () => {console.log('setting item prop')
-        const screenWidth = window.innerWidth
+        let widthBasis = window.innerWidth
+        if(widthBasis > 1000) {
+            widthBasis = 1000
+        } 
         const element = document.getElementById("item-writeup-container")
         if(element){
-            element.style.maxWidth = `${screenWidth - 360}px`
+            element.style.maxWidth = `${widthBasis - 360}px`
         }    
     }
 

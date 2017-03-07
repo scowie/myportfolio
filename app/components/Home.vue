@@ -27,6 +27,14 @@
                         <a v-for="imgUrl in item.imageUrls" :href="imgUrl">
                         <progressive-img :src="imgUrl" >
                         </a>
+                        <video v-for="videoUrl in item.videoUrls"
+                            controls="controls" 
+                            width="800" 
+                            height="600" 
+                            name="NetworkAnimation" 
+                            :src="videoUrl">
+                        </video>
+
                     </div>
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p v-html="item.description" class="item-writeup-text" style="text-align:justify">

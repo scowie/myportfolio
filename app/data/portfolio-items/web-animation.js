@@ -1,7 +1,9 @@
 const WebAnimation = {
     title: 'Web Animation Project',
     imageUrls: [
-        'https://s3.amazonaws.com/cowie-calkins/CascaisStreet_n.jpg'
+    ],
+    videoUrls: [
+        'https://s3.amazonaws.com/cowie-public/networkAnimation.mov'
     ],
     timeline: '2015',
     description: 'This is a test description',

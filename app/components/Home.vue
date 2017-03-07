@@ -24,8 +24,8 @@
                     <div 
                         class="image-container"
                         style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
-                        <a v-for="imgUrl in item.imageUrls" :href="imgUrl">
-                        <progressive-img :src="imgUrl" >
+                        <a v-for="imgUrl in item.imageUrls" :href="imgUrl" style="max-height: 200px; max-width: 300px">
+                        <progressive-img :src="imgUrl" style="object-fit:contain">
                         </a>
                         <video v-for="videoUrl in item.videoUrls"
                             controls="controls" 

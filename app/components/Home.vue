@@ -7,7 +7,7 @@
                     <md-layout md-gutter>
                         <md-layout md-column>
                             <h1 class="md-title">{{item.title}}</h1>
-                            <h3 class="md-subhead">{{item.subheader}}</h3>
+                            <h3 v-html="item.subheader" class="md-subhead"></h3>
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>

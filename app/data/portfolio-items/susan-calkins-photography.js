@@ -11,8 +11,7 @@ const SusanCalkinsPhotography = {
     tags: [
         {label: 'JQuery', link: 'https://jquery.com/'},
         {label: 'XML', link: 'http://www.xmlfiles.com/xml/'},
-        {label: 'PHP', link: 'http://php.net/'},
-        {label: 'Apache', link: 'https://www.apache.org/'}
+        {label: 'PHP', link: 'http://php.net/'}
     ]
 }
 

@@ -126,9 +126,8 @@
   
              <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top; border:1px solid red;">
                 <p class="about-me-writeup-text">
-                    Testing...kjfkasjfkls  dksjfklas fakj kj flkjs akf klasj faksj fklasjlfkj sklf slk jflkasj fksj f 
-                    ljflks fklasj dfksj flk  sjflkasj fkjaslkf jskljfalksj flka flkas jl' falks fkljskf askl flksa jfk 
-                     ljfask jflkasj flkasjflkajs flkj slkfjaskl jflkasj flkas '
+                    {{ aboutme.text }}
+                    
                 </p>
             </div>   
         </div>
@@ -136,8 +135,8 @@
 </template>
 
 <script>
-
-   import $ from 'jquery'
+    import AboutMe from '../data/about-me'
+    import $ from 'jquery'
 
     const getAppropriateHeightForAboutMe = () => {
         let imgHeight = document.getElementById("about-me-image-container").clientHeight
@@ -160,7 +159,7 @@
     export default {
     data () {
         return {
-        
+            aboutme: AboutMe
         }
     },
     methods: {

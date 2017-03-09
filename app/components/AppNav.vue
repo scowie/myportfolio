@@ -120,13 +120,13 @@
    
         <div id="about-me">
 
-            <div id="about-me-image-container" style="height:185x; width:180px; border:1px solid red; margin-top:20px; margin-left:20px; display:inline-block;">
+            <div id="about-me-image-container" style="height:185x; width:180px; margin-top:20px; margin-left:20px; display:inline-block;">
                 <img src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
             </div>
   
-             <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top; border:1px solid red;">
-                <p class="about-me-writeup-text">
-                    {{ aboutme.text }}
+             <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top;">
+                <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify">
+                    
                     
                 </p>
             </div>   
@@ -151,7 +151,7 @@
         return appropriateHeight
     }
     
-    const setAppropriateHeightForAboutMe = () => {console.log('yes?')
+    const setAppropriateHeightForAboutMe = () => {
         document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
     }
 
@@ -169,26 +169,11 @@
             closeLeftSidenav() {
                 this.$refs.leftSidenav.close();
             },
-            toggleAboutMe() {console.log('called toggle')
+            toggleAboutMe() {
                 const el = document.getElementById("about-me")
                 if(!el.style.height || el.style.height == "0px") {
-                    // let ht1 = document.getElementById("about-me-image-container").clientHeight
-                    // let ht2 = document.getElementById("about-me-writeup-container").clientHeight    
-                    // let h
-                    // console.log(ht1+ht2)
-                    // console.log(el.clientHeight)  
-                    // console.log($("#about-me-writeup-container").position().left)    
-                    // if($("#about-me-writeup-container").position().left > 100){
-                    //     h = ht1+45
-                    // } else {
-                    //     h = ht1+45+ht2
-                    //     console.log('h', h)
-                    // }  
-                    // console.log(`${h}px`)
-                    // el.style.height = `${h}px`
                     setAppropriateHeightForAboutMe()
                 } else {
-                    console.log('here')
                     el.style.height = "0px"
                 }
             },
@@ -216,7 +201,7 @@
         top:64px; 
         width:100%; 
         height: 0px; 
-        border:1px solid red;
+        border-bottom:1px solid gray;
         -webkit-transition: height 1s; /* Safari */
         transition: height 1s;
     }

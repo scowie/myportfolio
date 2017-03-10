@@ -38,7 +38,7 @@
                     </div>
                     <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p v-html="item.description" class="item-writeup-text" style="text-align:justify">
-                            {{ item.description }}
+            
                         </p>
                     </div>                
                 </div>

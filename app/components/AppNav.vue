@@ -126,8 +126,6 @@
   
              <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top;">
                 <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify">
-                    
-                    
                 </p>
             </div>   
         </div>

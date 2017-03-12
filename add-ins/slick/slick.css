@@ -115,3 +115,40 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.slick-prev {
+    color: rgba(87,87,87, 0.5); 
+    height:40px; 
+    width:40px; 
+    border:1px solid rgba(250,250,250, 0.1); 
+    border-radius:20px; 
+    position:absolute; 
+    background: rgba(250,250,250, 0.5);
+    z-index:2;
+    top:70px; 
+    left:25px;
+}
+
+.slick-prev:hover {
+    cursor: pointer;
+    color:rgba(87,87,87, 0.8);
+}
+
+.slick-next {
+    color: rgba(87,87,87, 0.5); 
+    height:40px; 
+    width:40px; 
+    border:1px solid rgba(250,250,250, 0.1);
+    border-radius:20px; 
+    position:absolute; 
+    background: rgba(250,250,250, 0.5); 
+    z-index:2;
+    top:70px; 
+    left:240px;
+}
+
+.slick-next:hover {
+    cursor: pointer;
+    color:rgba(87,87,87, 0.8);
+}

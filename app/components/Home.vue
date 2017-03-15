@@ -3,7 +3,7 @@
         <br />
         <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
             <md-card md-with-hover>
-                <md-card-header style="padding-bottom:0px; background:rgba(63,81,181,0.05)">
+                <md-card-header style="padding-bottom:10px; background:rgba(63,81,181,0.05)">
                     <md-layout md-gutter>
                         <md-layout md-column>
                             <h1 class="md-title">{{item.title}}</h1>
@@ -37,7 +37,7 @@
                         </video>
 
                     </div>
-                    <div id="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
+                    <div class="item-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top">
                         <p v-html="item.description" class="item-writeup-text" style="text-align:justify">
             
                         </p>
@@ -58,10 +58,10 @@
         if(widthBasis > 1000) {
             widthBasis = 1000
         } 
-        const element = document.getElementById("item-writeup-container")
-        if(element){
+        const elements = Array.from(document.getElementsByClassName("item-writeup-container"))
+        elements.forEach(element => {
             element.style.maxWidth = `${widthBasis - 360}px`
-        }    
+        })
     }
 
     const getAppropriateHeightForAboutMe = () => {

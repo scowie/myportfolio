@@ -6,10 +6,10 @@ const WebAnimation = {
         'https://s3.amazonaws.com/cowie-public/networkAnimation.mov'
     ],
     timeline: '2015',
-    description: 'This complex web animation project was built as an assignment for a course in computer networks.  The Greensock Animation Platform (GSAP) was used for the animation.',
+    description: 'This complex web animation, built with the <a href="https://greensock.com/gsap" target="_blank">Greensock Animation Platform</a> (GSAP), illustrates how data is transmitted across a computer network. jljlkj jlkjlj lkjlkj lkj klj kljlkjlj kljlkjlk jlk lk jlkl',
     tags: [
-        {label: 'GSAP', link: 'https://greensock.com/gsap'},
-        {label: 'PHP', link: 'http://php.net/'}
+        // {label: 'GSAP', link: 'https://greensock.com/gsap'},
+        // {label: 'PHP', link: 'http://php.net/'}
     ]
 }
 

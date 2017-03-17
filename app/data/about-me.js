@@ -1,5 +1,5 @@
 const AboutMe = {
-    text: 'I am a <i>fullstack</i> software developer in Greensboro, North Carolina.  Most of my development experience is in building web applications with html, css and javascript (using frameworks/libraries such as Angular.js, React.js, Vue.js and JQuery).  I tend to be product-focused, and love the process of bringing an app idea to life.   '
+    text: 'I am a <b><i>fullstack</i></b> software developer in Greensboro, North Carolina.  Most of my development experience is in building web applications with html, css and javascript (using frameworks/libraries such as Angular.js, React.js, Vue.js and JQuery).  I tend to be product-focused, and love the process of bringing an app idea to life.   '
 }
 
 /*

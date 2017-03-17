@@ -120,7 +120,7 @@
    
         <div id="about-me">
 
-            <div id="about-me-image-container" style="height:185x; width:180px; margin-top:20px; margin-left:20px; display:inline-block;">
+            <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; display:inline-block;">
                 <img src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
             </div>
   

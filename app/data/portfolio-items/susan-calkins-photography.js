@@ -1,17 +1,17 @@
 const SusanCalkinsPhotography = {
     title: 'Susan Calkins Photography',
-    subheader: '<a href="http://www.susancalkinsphotography.com">susancalkinsphotography.com</a>',
+    subheader: '<a href="http://www.susancalkinsphotography.com" target="_blank">susancalkinsphotography.com</a>',
     imageUrls: [
         'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-06+at+9.07.42+PM.png',
         'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-06+at+9.08.20+PM.png',
         'https://s3.amazonaws.com/cowie-public/Screen+Shot+2017-03-06+at+9.25.45+PM.png'
     ],
     timeline: '2014',
-    description: 'This is a test description jljlkjlkjk kl jklj lkjk lkj kljkljlk lkj lkjlk jlkjlkj lkj lkjlkjkl jklj lkj kjlk jlkjlkjlk jklj kjlk lkjlk lkj klj klj lkj klj lkjklj j kjlk jlk jlkj lkj klj lkj lkjklj kljlj lkjlkjlkj lkjklj lkj lkj lkjlk kljlkj lkjlkj kjlk jklj lkj lkjkljlkjlkj j ',
+    description: "This website displays galleries of images in clean, uncluttered presentation that allows the artist's photography to be the main focus of attention.  <a href='https://jquery.com/' target='_blank'>JQuery</a> is used for several features such as the rotating slide show, lightbox popup, and justified image thumbnails that are true to actual image dimension ratios.  A basic administrative page is provided for the site owner to manage the content, including: creating galleries, adding/deleting images, rearranging image positions, uploading the logo and entering various text to be displayed.  The administrative tool was built with <a href='http://php.net' target='_blank'>PHP</a>, and an XML file is used to store the state of the site.  Image files are stored in separate directories for each gallery.",
     tags: [
-        {label: 'JQuery', link: 'https://jquery.com/'},
-        {label: 'XML', link: 'http://www.xmlfiles.com/xml/'},
-        {label: 'PHP', link: 'http://php.net/'}
+        // {label: 'JQuery', link: 'https://jquery.com/'},
+        // {label: 'XML', link: 'http://www.xmlfiles.com/xml/'},
+        // {label: 'PHP', link: 'http://php.net/'}
     ]
 }
 

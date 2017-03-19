@@ -70,7 +70,7 @@
         let writeupLeftPos = $("#about-me-writeup-container").position().left
         let appropriateHeight
         if(writeupLeftPos > 100) {
-            appropriateHeight = imgHeight+45
+            appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
         } else {
             appropriateHeight = imgHeight+45+writeupHeight
         }

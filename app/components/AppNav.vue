@@ -121,7 +121,8 @@
         <div id="about-me">
 
             <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; display:inline-block;">
-                <img src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
+                <img style="" src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
+                <router-link style="width:100px;margin-top:15px; margin-left:0px; margin-right:0px; width:120px" tag="md-button" to="/components/button" class="md-raised md-default"><span style="text-transform: lowercase">resume</span></router-link>
             </div>
   
              <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top;">

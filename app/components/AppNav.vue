@@ -116,8 +116,12 @@
                 <a v-on:click="toggleResume">Full Resume</a>
             </div>   
         </div>
-        <div id="resume" style="border:1px solid red; margin-top:75px">
-            resume
+        <div v-if="showResume" id="resume" style="border:1px solid red; margin-top:75px">
+            <h2>resume</h2>
+            <p>content content content content content</p>
+            <h2>resume</h2>
+            <h2>resume</h2>
+            <h2>resume</h2>
         </div>
     </div>
 </template>
@@ -147,7 +151,8 @@
     export default {
     data () {
         return {
-            aboutme: AboutMe
+            aboutme: AboutMe,
+            showResume: false
         }
     },
     methods: {
@@ -162,11 +167,17 @@
                 if(!el.style.height || el.style.height == "0px") {
                     setAppropriateHeightForAboutMe()
                 } else {
+                    this.showResume = false
                     el.style.height = "0px"
                 }
             },
             toggleResume() {
                 console.log('hi')
+                if(!this.showResume){
+                    this.showResume = true
+                } else {
+                    this.showResume = false
+                }
             },
             open(ref) {
                 console.log('Opened: ' + ref);

@@ -113,7 +113,11 @@
              <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top;">
                 <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify">
                 </p>
+                <a v-on:click="toggleResume">Full Resume</a>
             </div>   
+        </div>
+        <div id="resume" style="border:1px solid red; margin-top:75px">
+            resume
         </div>
     </div>
 </template>
@@ -160,6 +164,9 @@
                 } else {
                     el.style.height = "0px"
                 }
+            },
+            toggleResume() {
+                console.log('hi')
             },
             open(ref) {
                 console.log('Opened: ' + ref);

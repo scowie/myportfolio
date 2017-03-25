@@ -29,13 +29,6 @@ const router = new VueRouter({
       component: function (resolve) {
         require(['./components/Home.vue'], resolve)
       }
-    },
-    {
-      path: '/resume',
-      name: 'resume',
-      component: function (resolve) {
-        require(['./components/Resume.vue'], resolve)
-      }
     }
   ]
   

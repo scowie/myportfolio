@@ -11,15 +11,10 @@
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
-                                <!--<md-icon class="md-primary">timeline</md-icon>-->
                                 <span style="color:#3f51b5; font-size:16px; font-weight:500;">{{item.timeline}}</span>
                             </div>
                         </md-layout>
                     </md-layout>
-                    <!--
-                    <md-chips v-model="item.tags" md-static>
-                        <template scope="chip"><a :href="chip.value.link" target="_blank">{{ chip.value.label }}</a></template>
-                    </md-chips> -->
                 </md-card-header>
                 <div style="margin-top:0px">
                     <div 

@@ -98,9 +98,6 @@
                     </md-icon>
                    <span>stephen_cowie</span>
                 </md-list-item>
-                <md-list-item>
-                     <router-link to="/resume">resume</router-link>
-                </md-list-item>
             </md-list>
         </md-sidenav>
    
@@ -116,12 +113,17 @@
                 <a v-on:click="toggleResume">Full Resume</a>
             </div>   
         </div>
-        <div v-if="showResume" id="resume" style="border:1px solid red; margin-top:75px">
-            <h2>resume</h2>
-            <p>content content content content content</p>
-            <h2>resume</h2>
-            <h2>resume</h2>
-            <h2>resume</h2>
+        <div v-if="showResume" id="resume" style="border:1px solid red; margin-top:75px; margin-left:25px">
+          
+            <h3>Education</h3>
+            <ul>
+                <li>Duke</li>
+            </ul>
+            <h3>Technical Skills</h3>
+            <h3>Relevant Experience</h3>
+            <h3>Courses Completed</h3>
+            <h3>Professional History</h3>
+  
         </div>
     </div>
 </template>

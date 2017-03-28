@@ -112,37 +112,39 @@
                 </p>
                 <a style="cursor:pointer" v-if="!showResume" v-on:click="toggleResume">Full Resume...</a>
                 <a style="cursor:pointer" v-if="showResume" v-on:click="toggleResume">Full Resume [ ]</a>
+
+                <div v-show="showResume" id="resume" style="border:1px solid red; margin-top:75px; margin-left:25px">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>UNC Greensboro, MS Computer Science (3.96), Dec. 2015</li>
+                        <li>North Carolina State University, MS Civil Engineering (3.75), 2004</li>
+                        <li>Duke University, BS Biology (3.39), 1999</li>
+                    </ul>
+                    <h3>Technical Skills</h3>
+                    <ul style="list-style: none;">
+                        <li>
+                            <label>Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
+                        </li>
+                        <li>
+                            <label>API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go</span>
+                        </li>
+                        <li>
+                            <label>Databases:</label><span>   MongoDB, Couchbase, DynamoDB, Postgres, MySQL</span>
+                        </li>
+                        <li>
+                            <label>Cloud/Distributed Systems:</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>
+                        </li>
+                    </ul>
+                    <h3>Relevant Experience</h3>
+
+                    <h3>Courses Completed</h3>
+
+                    <h3>Professional History</h3>
+                </div>
             </div>   
         </div>
         
-         <div v-if="showResume" id="resume" style="border:1px solid red; margin-top:75px; margin-left:25px">
-            <h3>Education</h3>
-            <ul>
-                <li>UNC Greensboro, MS Computer Science (3.96), Dec. 2015</li>
-                <li>North Carolina State University, MS Civil Engineering (3.75), 2004</li>
-                <li>Duke University, BS Biology (3.39), 1999</li>
-            </ul>
-            <h3>Technical Skills</h3>
-            <ul style="list-style: none;">
-                <li>
-                    <label>Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
-                </li>
-                <li>
-                    <label>API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go</span>
-                </li>
-                <li>
-                    <label>Databases:</label><span>   MongoDB, Couchbase, DynamoDB, Postgres, MySQL</span>
-                </li>
-                <li>
-                    <label>Cloud/Distributed Systems:</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>
-                </li>
-            </ul>
-            <h3>Relevant Experience</h3>
 
-            <h3>Courses Completed</h3>
-
-            <h3>Professional History</h3>
-        </div>
 
 
     </div>
@@ -165,7 +167,7 @@
         return appropriateHeight
     }
     
-    const setAppropriateHeightForAboutMe = () => {
+    const setAppropriateHeightForAboutMe = () => {console.log(getAppropriateHeightForAboutMe())
         document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
     }
 
@@ -194,11 +196,16 @@
                 }
             },
             toggleResume() {
-                console.log('hi')
                 if(!this.showResume){
                     this.showResume = true
+                    setTimeout(function() {
+                        setAppropriateHeightForAboutMe()
+                    }, 10)
                 } else {
                     this.showResume = false
+                    setTimeout(function() {
+                        setAppropriateHeightForAboutMe()
+                    }, 10)
                 }
             },
             open(ref) {

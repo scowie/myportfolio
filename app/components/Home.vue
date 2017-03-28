@@ -96,7 +96,8 @@
                     type:'image',
                     gallery: {
                         enabled: true
-                    }
+                    },
+                    closeOnBgClick: false
                 })
             })
         }

@@ -99,7 +99,6 @@
 
     window.onresize = () => {
         setItemWriteUpProp()
-        setAboutMeWriteUpProp()
         if(document.getElementById("about-me").style.height && document.getElementById("about-me").style.height !== "0px"){
             setAppropriateHeightForAboutMe()
         }

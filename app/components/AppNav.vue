@@ -165,6 +165,14 @@
         document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
     }
 
+    const fadeOutResume = () => {
+        document.getElementById("resume").style.opacity = 0
+    }
+
+    const fadeInResume = () => {
+        document.getElementById("resume").style.opacity = 1
+    }
+
 
     export default {
     data () {
@@ -191,12 +199,17 @@
             },
             toggleResume() {
                 if(!this.showResume){
+                    fadeInResume()
                     this.showResume = true
                     setTimeout(function() {
                         setAppropriateHeightForAboutMe()
                     }, 10)
                 } else {
-                    this.showResume = false
+                    fadeOutResume()
+                   this.showResume = false
+                //    setTimeout(function() {
+                //         this.showResume = false
+                //     }, 500)
                     setTimeout(function() {
                         setAppropriateHeightForAboutMe()
                     }, 10)
@@ -220,7 +233,8 @@
     }
 
     #resume {
-        transition: display 0.75s;
+        opacity:1;
+        transition: opacity 0.75s;
     }
 
     #about-me {

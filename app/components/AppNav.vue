@@ -103,11 +103,11 @@
    
         <div id="about-me">
 
-            <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; display:inline-block;">
+            <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; margin-right:20px; float:left; border:1px solid green;">
                 <img style="" src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
             </div>
   
-             <div id="about-me-writeup-container" style="margin-top:20px; min-width:300px; display:inline-block; padding-left:20px; vertical-align:top;">
+             <div id="about-me-writeup-container" style="margin-top:20px; margin-left:2px; min-width:300px; float:none; padding-left:20px; padding-right:20px; vertical-align:top; border:1px solid red; width:100%;">
                 <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify">
                 </p>
                 <a style="cursor:pointer" v-if="!showResume" v-on:click="toggleResume">Full Resume...</a>
@@ -116,7 +116,7 @@
                 <div v-show="showResume" id="resume" style="border:1px solid red; margin-top:75px; margin-left:25px">
                     <h3>Education</h3>
                     <ul>
-                        <li>UNC Greensboro, MS Computer Science (3.96), Dec. 2015</li>
+                        <li>UNC Greensboro, MS Computer Science (3.96), 2015</li>
                         <li>North Carolina State University, MS Civil Engineering (3.75), 2004</li>
                         <li>Duke University, BS Biology (3.39), 1999</li>
                     </ul>
@@ -157,13 +157,7 @@
     const getAppropriateHeightForAboutMe = () => {
         let imgHeight = document.getElementById("about-me-image-container").clientHeight
         let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
-        let writeupLeftPos = $("#about-me-writeup-container").position().left
-        let appropriateHeight
-        if(writeupLeftPos > 100) {
-            appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
-        } else {
-            appropriateHeight = imgHeight+45+writeupHeight
-        }
+        let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
         return appropriateHeight
     }
     

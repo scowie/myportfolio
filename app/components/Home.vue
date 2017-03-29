@@ -62,13 +62,7 @@
     const getAppropriateHeightForAboutMe = () => {
         let imgHeight = document.getElementById("about-me-image-container").clientHeight
         let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
-        let writeupLeftPos = $("#about-me-writeup-container").position().left
-        let appropriateHeight
-        if(writeupLeftPos > 100) {
-            appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
-        } else {
-            appropriateHeight = imgHeight+45+writeupHeight
-        }
+        let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
         return appropriateHeight
     }
     
@@ -76,13 +70,13 @@
         document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
     }
 
-    const setAboutMeWriteUpProp = () => {console.log('setting about me')
-        const screenWidth = window.innerWidth
-        const element = document.getElementById("about-me-writeup-container")
-        if(element){
-            element.style.maxWidth = `${screenWidth - 220}px`
-        }    
-    }
+    // const setAboutMeWriteUpProp = () => {console.log('setting about me')
+    //     const screenWidth = window.innerWidth
+    //     const element = document.getElementById("about-me-writeup-container")
+    //     if(element){
+    //         element.style.maxWidth = `${screenWidth - 220}px`
+    //     }    
+    // }
 
     const initializeMagnificPopup = () => {
         const imageContainer = $('.image-container')

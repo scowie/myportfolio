@@ -113,7 +113,7 @@
                 <a style="cursor:pointer" v-if="!showResume" v-on:click="toggleResume">Full Resume...</a>
                 <a style="cursor:pointer" v-if="showResume" v-on:click="toggleResume">Full Resume [ ]</a>
 
-                <div v-show="showResume" id="resume" style="border:1px solid red; margin-top:75px; margin-left:25px">
+                <div v-show="showResume" id="resume" style="border:1px solid red;">
                     <h3>Education</h3>
                     <ul>
                         <li>UNC Greensboro, MS Computer Science (3.96), 2015</li>
@@ -217,6 +217,10 @@
         z-index:3;
         position:fixed;
         width:100%;
+    }
+
+    #resume {
+        transition: display 0.75s;
     }
 
     #about-me {

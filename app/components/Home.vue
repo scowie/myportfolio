@@ -70,14 +70,6 @@
         document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
     }
 
-    // const setAboutMeWriteUpProp = () => {console.log('setting about me')
-    //     const screenWidth = window.innerWidth
-    //     const element = document.getElementById("about-me-writeup-container")
-    //     if(element){
-    //         element.style.maxWidth = `${screenWidth - 220}px`
-    //     }    
-    // }
-
     const initializeMagnificPopup = () => {
         const imageContainer = $('.image-container')
         if(imageContainer) {
@@ -101,7 +93,6 @@
     if (document.readyState === 'complete') {
         clearInterval(stateCheck)
         setItemWriteUpProp()
-        setAboutMeWriteUpProp()
         initializeMagnificPopup()
     }
     }, 100)

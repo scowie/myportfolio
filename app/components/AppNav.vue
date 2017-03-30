@@ -126,7 +126,7 @@
                             <label style="font-weight:700; font-style:italic">Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
                         </li>
                         <li>
-                            <label style="font-weight:700; font-style:italic">API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go</span>
+                            <label style="font-weight:700; font-style:italic">API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go, Postman, Swagger</span>
                         </li>
                         <li>
                             <label style="font-weight:700; font-style:italic">Databases:</label><span>   MongoDB, Couchbase, DynamoDB, Postgres, MySQL</span>
@@ -138,19 +138,47 @@
                     <h3>Relevant Experience</h3>
                     <ul style="list-style-type: square">
                         <li>
-                        <span style="font-weight:700; font-style:italic">Inmar, Inc.</span>
+                        <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2016 - Current)
+                            Build new single page web applications with AngularJS 1.4, Vue.js and React.
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span>
+                        <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span> (Fall 2015)
+                            Developed a MEAN stack web application.
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">Inmar, Inc.</span>
+                        <li><span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (Summer 2015)
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span>
+                        <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span> (2014)
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">MS Comp Science Projects</span>
+                        <li><span style="font-weight:700; font-style:italic">MS Comp Science Projects</span> (2013 - 2014)
+                            <ul>
+                                <li>Network Animation</li>
+                                <li>Big Data Machine Learning</li>
+                                <li>DNA Sequence Assembly Algorithms</li>
+                                <li>Hadoop Cluster</li>
+                                <li>SQL Database Web Application</li>
+                                <li>Java Desktop Application</li>
+                                <li>
+                            </ul>
                         </li>
                     </ul>
 
                     <h3>Courses Completed</h3>
+                    <ul>
+                        <li>Intro to Computer Science (Object Oriented Programming with Java 1)</li>
+                        <li>Data Structures & Algorithms (Object Oriented Programming with Java 2)</li>
+                        <li>Advanced Data Structures (Object Oriented Programming with Java 3)</li>
+                        <li>Foundations of Computer Science</li>
+                        <li>Computer Organization & Assembly Language</li>
+                        <li>Algorithm Analysis & Design</li>
+                        <li>Software Engineering</li>
+                        <li>Foundations of Computer Science 2</li>
+                        <li>Advanced Database Systems</li>
+                        <li>Algorithm Analysis & Design 2</li>
+                        <li>Principles of XML Databases</li>
+                        <li>Theory of Computation</li>
+                        <li>Operating Systems</li>
+                        <li>Principles of Computer Networks</li>
+                        <li>Big Data & Machine Learning</li>
+                    <ul>
 
                     <h3>Professional History</h3>
                 </div>

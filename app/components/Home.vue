@@ -62,7 +62,7 @@
     const getAppropriateHeightForAboutMe = () => {
         let imgHeight = document.getElementById("about-me-image-container").clientHeight
         let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
-        let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
+        let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 20))
         return appropriateHeight
     }
     

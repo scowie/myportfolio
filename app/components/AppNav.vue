@@ -103,39 +103,52 @@
    
         <div id="about-me">
 
-            <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; margin-right:20px; float:left; border:1px solid green;">
+            <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; margin-right:20px; float:left;">
                 <img style="" src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
             </div>
   
-             <div id="about-me-writeup-container" style="margin-top:20px; margin-left:2px; min-width:300px; float:none; padding-left:20px; padding-right:20px; vertical-align:top; border:1px solid red; width:100%;">
+             <div id="about-me-writeup-container" style="margin-top:20px; margin-left:2px; min-width:300px; float:none; padding-left:20px; padding-right:20px; vertical-align:top; width:100%;">
                 <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify">
                 </p>
                 <a style="cursor:pointer" v-if="!showResume" @click="toggleResume">Full Resume...</a>
                 <a style="cursor:pointer" v-if="showResume" @click="toggleResume">Full Resume [ ]</a>
 
-                <div id="resume" style="border:1px solid red; height:0px;">
+                <div id="resume" style="height:0px;">
                     <h3>Education</h3>
-                    <ul>
-                        <li>UNC Greensboro, MS Computer Science (3.96), 2015</li>
-                        <li>North Carolina State University, MS Civil Engineering (3.75), 2004</li>
-                        <li>Duke University, BS Biology (3.39), 1999</li>
+                    <ul style="list-style-type: square">
+                        <li><span style="font-weight:700; font-style:italic">UNC Greensboro</span>, MS Computer Science (3.96), 2015</li>
+                        <li><span style="font-weight:700; font-style:italic">North Carolina State University</span>, MS Civil Engineering (3.75), 2004</li>
+                        <li><span style="font-weight:700; font-style:italic">Duke University</span>, BS Biology (3.39), 1999</li>
                     </ul>
                     <h3>Technical Skills</h3>
                     <ul style="list-style: none;">
                         <li>
-                            <label>Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
+                            <label style="font-weight:700; font-style:italic">Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
                         </li>
                         <li>
-                            <label>API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go</span>
+                            <label style="font-weight:700; font-style:italic">API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go</span>
                         </li>
                         <li>
-                            <label>Databases:</label><span>   MongoDB, Couchbase, DynamoDB, Postgres, MySQL</span>
+                            <label style="font-weight:700; font-style:italic">Databases:</label><span>   MongoDB, Couchbase, DynamoDB, Postgres, MySQL</span>
                         </li>
                         <li>
-                            <label>Cloud/Distributed Systems:</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>
+                            <label style="font-weight:700; font-style:italic">Cloud/Distributed Systems:</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>
                         </li>
                     </ul>
                     <h3>Relevant Experience</h3>
+                    <ul style="list-style-type: square">
+                        <li>
+                        <span style="font-weight:700; font-style:italic">Inmar, Inc.</span>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Inmar, Inc.</span>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">MS Comp Science Projects</span>
+                        </li>
+                    </ul>
 
                     <h3>Courses Completed</h3>
 
@@ -157,7 +170,7 @@
     const getAppropriateHeightForAboutMe = () => {
         let imgHeight = document.getElementById("about-me-image-container").clientHeight
         let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
-        let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 25))
+        let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 20))
         return appropriateHeight
     }
     

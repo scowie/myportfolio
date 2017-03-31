@@ -104,7 +104,7 @@
         <div id="about-me">
 
             <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; margin-right:20px; float:left;">
-                <img style="" src="https://s3.amazonaws.com/cowie-calkins/Screen+Shot+2017-03-02+at+9.27.05+PM.png">
+                <img style="" src="https://s3.amazonaws.com/cowie-public/AAEAAQAAAAAAAAKfAAAAJDNlZGIwM2FkLTgzM2EtNDIzYi04YmM5LTViNDdhNDllOGM3NQ.jpg">
             </div>
   
              <div id="about-me-writeup-container" style="margin-top:20px; margin-left:2px; min-width:300px; float:none; padding-left:20px; padding-right:20px; vertical-align:top; width:100%;">
@@ -126,10 +126,10 @@
                             <label style="font-weight:700; font-style:italic">Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
                         </li>
                         <li>
-                            <label style="font-weight:700; font-style:italic">API Development:</label><span>   Express, Node.js, C# .NET Web Api, PHP, Go, Postman, Swagger</span>
+                            <label style="font-weight:700; font-style:italic">API Development:</label><span>   RESTful design, Express, Node.js, C# .NET Web Api, PHP, Golang, Postman, Swagger</span>
                         </li>
                         <li>
-                            <label style="font-weight:700; font-style:italic">Databases:</label><span>   MongoDB, Couchbase, DynamoDB, Postgres, MySQL</span>
+                            <label style="font-weight:700; font-style:italic">Databases:</label><span>   MongoDB, Mongoose, GridFS, Couchbase, DynamoDB, PostgreSQL, MySQL, relational database design</span>
                         </li>
                         <li>
                             <label style="font-weight:700; font-style:italic">Cloud/Distributed Systems:</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>
@@ -156,29 +156,28 @@
                                 <li>Hadoop Cluster</li>
                                 <li>SQL Database Web Application</li>
                                 <li>Java Desktop Application</li>
-                                <li>
                             </ul>
                         </li>
                     </ul>
 
                     <h3>Courses Completed</h3>
                     <ul>
-                        <li>Intro to Computer Science (Object Oriented Programming with Java 1)</li>
-                        <li>Data Structures & Algorithms (Object Oriented Programming with Java 2)</li>
-                        <li>Advanced Data Structures (Object Oriented Programming with Java 3)</li>
-                        <li>Foundations of Computer Science</li>
-                        <li>Computer Organization & Assembly Language</li>
-                        <li>Algorithm Analysis & Design</li>
-                        <li>Software Engineering</li>
-                        <li>Foundations of Computer Science 2</li>
-                        <li>Advanced Database Systems</li>
-                        <li>Algorithm Analysis & Design 2</li>
-                        <li>Principles of XML Databases</li>
-                        <li>Theory of Computation</li>
-                        <li>Operating Systems</li>
-                        <li>Principles of Computer Networks</li>
-                        <li>Big Data & Machine Learning</li>
-                    <ul>
+                        <li><span style="font-weight:700; font-style:italic">Intro to Computer Science</span> (Object Oriented Programming with Java 1)</li>
+                        <li><span style="font-weight:700; font-style:italic">Data Structures & Algorithms</span> (Object Oriented Programming with Java 2)</li>
+                        <li><span style="font-weight:700; font-style:italic">Advanced Data Structures</span> (Object Oriented Programming with Java 3)</li>
+                        <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Computer Organization & Assembly Language</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Software Engineering</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science 2</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design 2</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Principles of XML Databases</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Theory of Computation</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Operating Systems</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Principles of Computer Networks</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Big Data & Machine Learning</span></li>
+                    </ul>
 
                     <h3>Professional History</h3>
                 </div>

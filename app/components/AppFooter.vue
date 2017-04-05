@@ -33,7 +33,8 @@ export default {
         let el = document.getElementById("about-this-site")
         if(!this.showAboutThisSiteContent) {
             this.showAboutThisSiteContent = true
-            el.style.height = "110px"
+            el.style.height = "50px"
+            el.style.border = "1px solid #3f51b5"
             let scrollDown = setInterval(function() {
                 window.scrollTo(0,document.body.scrollHeight)
             }, 1) 
@@ -43,6 +44,7 @@ export default {
         } else {
             this.showAboutThisSiteContent = false
             el.style.height = "0px"
+            el.style.border = "none"
         }
       }
   }
@@ -62,12 +64,15 @@ export default {
         overflow:hidden;
         border-top-left-radius:5px;
         border-top-right-radius:5px;
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
         height:0px; 
         width:80%; 
         margin-left:auto;
         margin-right:auto;
-        border:1px solid #3f51b5; 
+        border:none;
         position:relative;
+        bottom:60px;
         transition: height 1s;
         -webkit-transition: height 1s;
     }

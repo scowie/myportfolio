@@ -1,5 +1,6 @@
 const WebAnimation = {
     title: 'Web Animation Project',
+    subheader: 'Model of Data Transmission Over a Network',
     imageUrls: [
     ],
     videoUrls: [

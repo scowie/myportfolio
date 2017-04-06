@@ -1,10 +1,12 @@
 <template>
   <div>
-    <app-nav></app-nav>
-    <div style="position:relative; border:1px solid white;">
-      <router-view></router-view>
-    </div>
-    <app-footer></app-footer>
+    <md-theme md-name="default">
+      <app-nav></app-nav>
+      <div style="position:relative; border:1px solid white;">
+        <router-view></router-view>
+      </div>
+      <app-footer></app-footer>
+    </md-theme>
   </div>
 
 </template>

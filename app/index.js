@@ -10,11 +10,32 @@ import VueProgressiveImage from 'vue-progressive-image'
 import 'vue-material/dist/vue-material.css'
 import '../node_modules/magnific-popup/dist/magnific-popup.css'
 import '../add-ins/slick/slick.css'
-//import '../add-ins/slick/slick-theme.css'
 
 Vue.use(VueRouter)
 Vue.use(VueMaterial)
 Vue.use(VueProgressiveImage)
+
+// Vue.material.registerTheme({
+//   default: {
+//     primary: 'indigo',
+//     accent: 'pink'
+//   } 
+// })
+
+
+Vue.material.registerTheme('about', {
+  primary: {
+    color: 'indigo',
+    hue: 'A200'
+  },
+  accent: {
+    color: 'grey',
+    hue: 300
+  }
+})
+
+//Vue.material.setCurrentTheme('about')
+
 
 /* App component */
 import App from './components/App.vue'

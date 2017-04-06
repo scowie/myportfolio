@@ -58,6 +58,8 @@ export default {
         position: absolute; 
         bottom: 0px; 
         left: 0px;
+        border:none;
+        box-shadow:none;
     }
 
     #about-this-site {

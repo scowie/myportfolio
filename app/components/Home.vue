@@ -136,7 +136,8 @@
 
     .item-writeup-text {
         margin-top:0px;
-        font-size:14px;
+        font-size:16px;
+        line-height:150%;
     }
 
 </style>

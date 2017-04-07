@@ -15,14 +15,6 @@ Vue.use(VueRouter)
 Vue.use(VueMaterial)
 Vue.use(VueProgressiveImage)
 
-// Vue.material.registerTheme({
-//   default: {
-//     primary: 'indigo',
-//     accent: 'pink'
-//   } 
-// })
-
-
 Vue.material.registerTheme('about', {
   primary: {
     color: 'indigo',
@@ -35,7 +27,6 @@ Vue.material.registerTheme('about', {
 })
 
 //Vue.material.setCurrentTheme('about')
-
 
 /* App component */
 import App from './components/App.vue'

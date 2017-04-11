@@ -140,7 +140,7 @@
                     <ul style="list-style-type: square">
                         <li>
                         <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2016 - Current)
-                            Worked on an Agile development team to build a variety of new single page web applications and APIs to provide SaaS features to internal business users, developers and clients.
+                            Worked on an Agile development team to build a variety of new single page web applications and APIs to provide SaaS features to internal and external business users and software developers.
                         </li>
                         <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span> (Fall 2015)
                             Developed and deployed a working prototype of an original new software application idea.  The app was built using MEAN stack and deployed to IBM Bluemix.  
@@ -149,6 +149,7 @@
                             Completed 3 projects in the 10 weeks.  The first was a C# console application that recursively cleaned unneeded files from servers on sleep/wake cycle.  The second was to set up a local development environment to work on an existing Django/Python front-end application that connected to backend services.  The third project was a .NET Web API and AngularJS single page application to perform CRUD operations on JSON files that defined AWS environment definitions.
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span> (2014)
+                            Responsive website displaying photography galleries and images, including a content management features.
                         </li>
                         <li><span style="font-weight:700; font-style:italic">MS Comp Science Projects</span> (2013 - 2014)
                             <ul>

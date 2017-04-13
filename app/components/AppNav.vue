@@ -165,9 +165,35 @@
 
                     <h3>Courses Completed</h3>
                     <ul>
-                        <li><span style="font-weight:700; font-style:italic">Intro to Computer Science</span> (Object Oriented Programming with Java 1)</li>
-                        <li><span style="font-weight:700; font-style:italic">Data Structures & Algorithms</span> (Object Oriented Programming with Java 2)</li>
-                        <li><span style="font-weight:700; font-style:italic">Advanced Data Structures</span> (Object Oriented Programming with Java 3)</li>
+                        <li><span style="font-weight:700; font-style:italic">Intro to Computer Science</span> (Object Oriented Programming with Java 1)
+                        <ul>
+                            <li>Identifiers, expressions, data types, and interactivity</li>
+                            <li>Decision structures (if, while, for)</li>
+                            <li>Functions</li>
+                            <li>Arrays</li>
+                            <li>Classes</li>
+                        </ul>
+                        
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Data Structures & Algorithms</span> (Object Oriented Programming with Java 2)
+                        <ul>
+                            <li>The programming process, algorithm analysis and design</li>
+                           <li>Object design techniques, including object composition and inheritance</li>
+                            <li>Sorting and searching algorithm design and analysis</li>
+                            <li>Making algorithms generic using generic data types</li>
+                            <li>Problem solving using recursion and the analysis of recursive algorithms</li>
+                            <li>Analysis of various data structures, including dynamic arrays, 2-D arrays, stack, and queues</li>
+                            <li>Polymorphism</li>
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Advanced Data Structures</span> (Object Oriented Programming with Java 3)
+                        <ul>
+                            <li>Algorithms: recursion, divide-and-conquer, backtracking, dynamic programming</li>
+                            <li>Binary trees: concepts, representations and traversals, heaps, search trees, 2-3-4 trees, red-black trees</li>
+                            <li>Associative structures: sets, maps, hash tables</li>
+                            <li>Graphs: concepts, representations and traversals</li> 
+                        </ul>
+                        </li>
                         <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science</span></li>
                         <li><span style="font-weight:700; font-style:italic">Computer Organization & Assembly Language</span></li>
                         <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span></li>

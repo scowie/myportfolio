@@ -194,17 +194,100 @@
                             <li>Graphs: concepts, representations and traversals</li> 
                         </ul>
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Computer Organization & Assembly Language</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Software Engineering</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science 2</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design 2</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Principles of XML Databases</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Theory of Computation</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Operating Systems</span></li>
-                        <li><span style="font-weight:700; font-style:italic">Principles of Computer Networks</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science</span>
+                        <ul>
+                            <li>Sets, Sequences, and Functions</li>
+                            <li>Elementary Logic – Proofs</li>  
+                            <li>Relations</li>
+                            <li>Induction and Recursion – Algorithm Analysis</li> 
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Computer Organization & Assembly Language</span>
+                        <ul>
+                            <li>Data Representation</li>
+                            <li>Elements of Assembly Language</li>
+                            <li>Input/Output</li>
+                            <li>Branches, Loops, Arrays, Procedures</li>
+                            <li>Bit Manipulation, String Operations, Floating Point Operations</li>
+                            <li>Boolean Algebra and Gates</li>
+                            <li>Combinational Devices</li>
+                            <li>Arithmetic Functions and Circuits</li>
+                            <li>Sequential Circuit Analysis & Design</li>
+                            <li>Registers, Counters, and Memory</li>
+                            <li>Programmable Logic Devices</li>
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span>
+                        <ul>
+
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Software Engineering</span>
+                        <ul>
+                            <li>Software Life Cycle Models</li>
+                            <li>Software Process</li>
+                            <li>Software Teams</li>
+                            <li>Introduction to Testing</li>
+                            <li>Software Project Planning and Estimating</li>
+                            <li>Requirements and UML</li>
+                            <li>Object-oriented Analysis and UML</li>
+                            <li>Modules and Design</li>
+                            <li>Reuse and Portability</li>
+                            <li>Implementation</li>
+                            <li>Integration and Testing</li>
+                            <li>Maintenance</li>
+                            <li>Special Topics (e.g. Software Architecture, User Interface Design)</li> 
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science 2</span>
+                        <ul>
+                            <li>Elementary Logic</li>
+                            <li>Predicate Logic</li>
+                            <li>Discrete Probability</li>
+                            <li>Order Relations</li>
+                            <li>Regular Languages and Finite Automata</li>
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span><
+                        
+                        /li>
+                        <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design 2</span>
+                        <ul>
+                            <li>Randomized algorithms</li>
+                            <li>Divide and conquer</li>
+                            <li>Greedy algorithms</li>
+                            <li>Dynamic programming</li>
+                            <li>Graph algorithms</li>
+                            <li>NP-completeness and approximation algorithms</li> 
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Principles of XML Databases</span>
+                        
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Theory of Computation</span>
+                        <ul>
+                            <li>Finite Automata</li>
+                            <li>Pushdown Automata and Context-Free Languages</li>
+                            <li>Turing Machines and Effective Computability</li>
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Operating Systems</span>
+                        <ul>
+                            <li>Process and Thread Management, Scheduling, Synchronization and Deadlocks</li>
+                            <li>Memory Management (Main Memory and Virtual Memory)</li>
+                            <li>File Management, I/O Management</li>
+                            <li>Protection and Security</li>
+                        </ul>
+                        </li>
+                        <li><span style="font-weight:700; font-style:italic">Principles of Computer Networks</span>
+                        <ul>
+                            <li>Communications, Standards and protocols</li>
+                            <li>Network models</li>
+                            <li>Hop-to-hop mechanisms: Data and signals. Digital transmission. Bandwidth utilization, Transmission media and switching, Error detection and correction.</li>
+                            <li>Host-to-host mechanisms: Data link control and Multiple Access. Wired LAN and connecting LANs. Logical addressing and Internet protocol. Address mapping, error reporting and multicasting. Routing of IP packets and packet switching</li>
+                            <li>Simulator Modeling: Network programming - simulation of computer networking</li>
+                        </ul>
+                        </li>
                         <li><span style="font-weight:700; font-style:italic">Big Data & Machine Learning</span></li>
                     </ul>
 

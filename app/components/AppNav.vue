@@ -140,13 +140,13 @@
                     <ul style="list-style-type: square">
                         <li>
                         <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2016 - Current)
-                            Worked on an Agile development team to build a variety of new single page web applications and APIs to provide SaaS features to internal and external business users and software developers.
+                            Worked on an Agile development team to build a variety of new single page web applications and APIs to provide SaaS products to serve internal and external business users and software developers.
                         </li>
                         <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span> (Fall 2015)
                             Developed and deployed a working prototype of an original new software application idea.  The app was built using MEAN stack and deployed to IBM Bluemix.  
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (Summer 2015)
-                            Completed 3 projects in the 10 weeks.  The first was a C# console application that recursively cleaned unneeded files from servers on sleep/wake cycle.  The second was to set up a local development environment to work on an existing Django/Python front-end application that connected to backend services.  The third project was a .NET Web API and AngularJS single page application to perform CRUD operations on JSON files that defined AWS environment definitions.
+                            Completed 3 projects in the 10 weeks.  The first was a C# console application that recursively cleaned unneeded files from servers on sleep/wake cycle.  The second was to set up a local development environment to work on an existing Django/Python front-end application that connected to backend services.  The third project was a new .NET Web API and AngularJS single page application to perform CRUD operations on JSON files that defined AWS environment definitions.
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span> (2014)
                             Responsive website displaying photography galleries and images, including a content management features.
@@ -155,6 +155,7 @@
                             <ul>
                                 <li>Network Animation</li>
                                 <li>Big Data Machine Learning</li>
+                                <li>Graph: Shortest Distance Algorithm Analysis</li>
                                 <li>DNA Sequence Assembly Algorithms</li>
                                 <li>Hadoop Cluster</li>
                                 <li>SQL Database Web Application</li>
@@ -219,7 +220,12 @@
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span>
                         <ul>
-
+                            <li>Randomized algorithms</li>
+                            <li>Divide and conquer</li>
+                            <li>Greedy algorithms</li>
+                            <li>Dynamic programming</li>
+                            <li>Graph algorithms</li>
+                            <li>NP-completeness and approximation algorithms</li>
                         </ul>
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Software Engineering</span>
@@ -248,9 +254,16 @@
                             <li>Regular Languages and Finite Automata</li>
                         </ul>
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span><
-                        
-                        /li>
+                        <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span>
+                        <ul>
+                            <li>Entity-Relationship Model</li>
+                            <li>Relational Data Model and Relational Algebra</li>
+                            <li>SQL Query Language</li>
+                            <li>Relational Database Design Including Functional Dependencies and Normalization</li>
+                            <li>Application Design and Development</li>
+                            <li>XML</li> 
+                        </ul>
+                        </li>
                         <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design 2</span>
                         <ul>
                             <li>Randomized algorithms</li>
@@ -262,7 +275,10 @@
                         </ul>
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Principles of XML Databases</span>
-                        
+                            <ul>
+                                <li>XML Structure and Schema</li>
+                                <li>Querying with XPATH, XQUERY</li>
+                            </ul>
                         </li>
                         <li><span style="font-weight:700; font-style:italic">Theory of Computation</span>
                         <ul>
@@ -288,7 +304,13 @@
                             <li>Simulator Modeling: Network programming - simulation of computer networking</li>
                         </ul>
                         </li>
-                        <li><span style="font-weight:700; font-style:italic">Big Data & Machine Learning</span></li>
+                        <li><span style="font-weight:700; font-style:italic">Big Data & Machine Learning</span>
+                            <ul>
+                                <li>Data processing with Hadoop (map/reduce)</li>
+                                <li>Introduction to Machine Learning approaches: Support Vector Machine, Decision Trees and Random Forests, Deep Learning and Neural Networks</li>
+                                <li>Project:  Implementation of Support Vector Machine</li>
+                            </ul>
+                        </li>
                     </ul>
 
                     <h3>Professional History</h3>

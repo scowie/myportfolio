@@ -10,17 +10,14 @@
                 <h2 class="md-title">Stephen Cowie</h2>
                 
             </div>
-            
-            <md-speed-dial>
-                <md-button style="border:none; box-shadow: 0px 0px" class="md-fab md-mini md-primary" md-fab-trigger>
-                    <md-icon md-icon-morph @click.native="toggleAboutMe">expand_less</md-icon>
-                    <md-icon @click.native="toggleAboutMe">expand_more</md-icon>
-                </md-button>
-            </md-speed-dial>
         
+            <md-button class="md-icon-button" @click.native="toggleAboutMe">
+                <md-icon>more_vert</md-icon>
+            </md-button>
+
         </md-toolbar>
         <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
-            <md-toolbar>
+            <md-toolbar style="background-color:#f6f6f6;">
                 <div class="md-toolbar-container">
                     <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
                         <md-icon>navigate_before</md-cion>
@@ -30,7 +27,7 @@
                 </div>
             </md-toolbar>
 
-            <md-list>
+            <md-list style="background-color:#f6f6f6;">
                 <md-list-item href="mailto:cowiestephenjames@gmail.com">
                     <span>cowiestephenjames@gmail.com</span>
                 </md-list-item>

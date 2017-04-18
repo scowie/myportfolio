@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Fixed navbar -->
-        <md-toolbar class="fixed-top-nav">
+        <md-toolbar class="fixed-top-nav" style="background-color:#f6f6f6;">
             <div class="md-toolbar-container" style="flex: 1;">
                 <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
                     <md-icon>menu</md-cion>
@@ -111,10 +111,10 @@
                 <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify; font-size:16px; line-height:150%;">
                 </p>
 
-                <a style="cursor:pointer" v-if="!showResume" @click="toggleResume">Full Resume...</a>
-                <a style="cursor:pointer" v-if="showResume" @click="toggleResume">Full Resume [ ]</a>
+                <a style="cursor:pointer; font-size:16px;" v-if="!showResume" @click="toggleResume">Full Resume...</a>
+                <a style="cursor:pointer; font-size:16px;" v-if="showResume" @click="toggleResume">Full Resume [ ]</a>
 
-                <div id="resume" style="height:0px;">
+                <div id="resume" style="height:0px; text-align:justify; font-size:16px; line-height:150%;">
                     <h3>Education</h3>
                     <ul style="list-style-type: square">
                         <li><span style="font-weight:700; font-style:italic">UNC Greensboro</span>, MS Computer Science (3.96), 2015</li>
@@ -418,7 +418,7 @@
         top:64px; 
         width:100%; 
         height: 0px; 
-        border-bottom:1px solid gray;
+        /*border-bottom:1px solid gray;*/
         -webkit-transition: height 1s; /* Safari */
         transition: height 1s;
     }

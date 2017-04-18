@@ -2,8 +2,8 @@
     <div class="main-content">
         <br />
         <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
-            <md-card md-with-hover>
-                <md-card-header style="padding-bottom:10px; background:rgba(63,81,181,0.05)">
+            <md-card md-with-hover style="background-color:white; cursor:default;">
+                <md-card-header style="padding-bottom:10px;">
                     <md-layout md-gutter>
                         <md-layout md-column>
                             <h1 class="md-title">{{item.title}}</h1>
@@ -11,7 +11,7 @@
                         </md-layout>
                         <md-layout md-flex="33" md-flex-offset="33" md-align="end">
                             <div>
-                                <span style="color:#3f51b5; font-size:16px; font-weight:500;">{{item.timeline}}</span>
+                                <span style="font-size:16px; font-weight:500;">{{item.timeline}}</span>
                             </div>
                         </md-layout>
                     </md-layout>
@@ -19,8 +19,8 @@
                 <div style="margin-top:0px">
                     <div 
                         class="image-container"
-                        style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block;">
-                        <a v-for="imgUrl in item.imageUrls" :href="imgUrl" style="max-height: 200px; max-width: 300px">
+                        style="margin-bottom:20px; margin-left:20px; margin-top:20px; width:300px; height:200px; display:inline-block; border:1px solid #e4e4e4; cursor:zoom-in;">
+                        <a v-for="imgUrl in item.imageUrls" :href="imgUrl" style="max-height: 200px; max-width: 300px; cursor:zoom-in;">
                         <progressive-img :src="imgUrl" style="object-fit:contain">
                         </a>
                         <video v-for="videoUrl in item.videoUrls"

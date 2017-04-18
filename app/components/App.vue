@@ -16,6 +16,7 @@
 import AppNav from './AppNav.vue'
 import AppFooter from './AppFooter.vue'
 
+
 export default {
   name: 'app',
   components: { AppNav, AppFooter },

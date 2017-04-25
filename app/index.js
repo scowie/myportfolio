@@ -45,7 +45,6 @@ Vue.material.registerTheme({
 import App from './components/App.vue'
 
 const router = new VueRouter({
-  mode: 'history',
   base: '/dist/app',
   routes: [
     {
@@ -54,7 +53,16 @@ const router = new VueRouter({
       component: function (resolve) {
         require(['./components/Home.vue'], resolve)
       }
-    }
+    },
+    {
+      path: '/resume',
+      name: 'resume',
+      component: function (resolve) {
+        require(['./components/Resume.vue'], resolve)
+      }
+    },
+    { path: '*', redirect: { name: 'home' } }
+
   ]
   
 })

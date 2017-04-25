@@ -2,7 +2,7 @@
   <div>
     <md-theme md-name="default">
       <app-nav></app-nav>
-      <div style="position:relative; border:1px solid white;">
+      <div class="main-content">
         <router-view></router-view>
       </div>
       <app-footer></app-footer>

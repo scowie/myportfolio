@@ -108,7 +108,14 @@
                 <p class="about-me-writeup-text" v-html="aboutme.text" style="text-align:justify; font-size:16px; line-height:150%;">
                 </p>
 
-                <a style="cursor:pointer; font-size:16px;" v-if="!showResume" @click="toggleResume">Full Resume...</a>
+                <!--
+                <a style="cursor:pointer; font-size:16px;" v-if="!showResume" @click="toggleResume">Full Resume...</a> -->
+
+
+
+                <router-link to="/resume" class="nav-link">Full Resume</router-link>
+
+
                 <a style="cursor:pointer; font-size:16px;" v-if="showResume" @click="toggleResume">Full Resume [ ]</a>
 
                 <div id="resume" style="height:0px; text-align:justify; font-size:16px; line-height:150%;">

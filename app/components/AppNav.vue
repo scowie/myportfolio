@@ -113,7 +113,7 @@
 
 
 
-                <router-link to="/resume" class="nav-link">Full Resume</router-link>
+                <router-link @click="toggleAboutMe" to="/resume" class="nav-link">Full Resume</router-link>
 
 
                 <a style="cursor:pointer; font-size:16px;" v-if="showResume" @click="toggleResume">Full Resume [ ]</a>

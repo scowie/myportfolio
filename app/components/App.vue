@@ -26,3 +26,13 @@ export default {
   }
 }
 </script>
+
+<style>
+    .main-content {
+        border:1px solid blue;
+        margin-top: 80px;
+        margin-bottom: 120px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+</style>

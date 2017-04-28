@@ -1,5 +1,8 @@
 <template>
-    <div id="resume" style="text-align:justify; font-size:16px; line-height:150%;">
+    <div id="resume" style="text-align:justify; font-size:16px; line-height:150%; background-color:#ffffff; padding:10px;">
+    <md-button class="md-icon-button md-raised" style="position: fixed; top:90px; right:20px;">
+        <md-icon>add</md-icon>
+    </md-button>
         <h3>Education</h3>
         <ul style="list-style-type: square">
             <li><span style="font-weight:700; font-style:italic">UNC Greensboro</span>, MS Computer Science (3.96), 2015</li>
@@ -206,6 +209,7 @@
 
 
 document.getElementById("about-me").style.height = "0px"
+
 
 export default {
     name: 'resume',

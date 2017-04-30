@@ -1,5 +1,15 @@
 <template>
     <div style="border:1px solid brown">
+
+
+   
+
+
+
+
+
+
+
         <br />
         <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
             <md-card md-with-hover style="background-color:white; cursor:default;">

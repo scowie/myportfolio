@@ -2,20 +2,26 @@
     <div>
         <!-- Fixed navbar -->
         <md-toolbar class="fixed-top-nav" style="background-color:#f6f6f6; border:1px solid blue; position:absolute; top:0px;">
-            <div class="md-toolbar-container" style="flex: 1;">
+            <div class="md-toolbar-container">
                 <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
                     <md-icon>menu</md-cion>
                 </md-button>
                 
-                <h2 class="md-title">Stephen Cowie</h2>
+                <h2 class="md-title" style="flex:1">Stephen Cowie</h2>
                 
-            </div>
-            
-            <router-link to="/">My Work</router-link>
-            <router-link to="/aboutme">About Me</router-link>
-            <router-link to="/resume">Resume</router-link>
+                <md-button>
+                    <router-link to="/">My Work</router-link>
+                </md-button>
+                <md-button>
+                    <router-link to="/aboutme">About Me</router-link>
+                </md-button>
+                <md-button>
+                    <router-link to="/resume">Resume</router-link>
+                </md-button>
 
+            </div>
         </md-toolbar>
+  
         <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
             <md-toolbar style="background-color:#f6f6f6;">
                 <div class="md-toolbar-container">

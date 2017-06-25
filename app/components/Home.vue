@@ -97,12 +97,12 @@
     }
     }, 100)
 
-    window.onresize = () => {
-        setItemWriteUpProp()
-        if(document.getElementById("about-me").style.height && document.getElementById("about-me").style.height !== "0px"){
-            setAppropriateHeightForAboutMe()
-        }
-    }
+    // window.onresize = () => {
+    //     setItemWriteUpProp()
+    //     if(document.getElementById("about-me").style.height && document.getElementById("about-me").style.height !== "0px"){
+    //         setAppropriateHeightForAboutMe()
+    //     }
+    // }
 
     export default {
         name: 'home',

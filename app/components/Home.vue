@@ -59,17 +59,6 @@
         })
     }
 
-    // const getAppropriateHeightForAboutMe = () => {
-    //     let imgHeight = document.getElementById("about-me-image-container").clientHeight
-    //     let writeupHeight = document.getElementById("about-me-writeup-container").clientHeight    
-    //     let appropriateHeight = (imgHeight > writeupHeight ? (imgHeight + 45) : (writeupHeight + 20))
-    //     return appropriateHeight
-    // }
-    
-    // const setAppropriateHeightForAboutMe = () => {console.log('yes?')
-    //     document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
-    // }
-
     const initializeMagnificPopup = () => {
         const imageContainer = $('.image-container')
         if(imageContainer) {
@@ -97,12 +86,6 @@
     }
     }, 100)
 
-    // window.onresize = () => {
-    //     setItemWriteUpProp()
-    //     if(document.getElementById("about-me").style.height && document.getElementById("about-me").style.height !== "0px"){
-    //         setAppropriateHeightForAboutMe()
-    //     }
-    // }
 
     export default {
         name: 'home',

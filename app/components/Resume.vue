@@ -209,10 +209,6 @@
 
 <script>
 
-
-// document.getElementById("about-me").style.height = "0px"
-
-
 export default {
     name: 'resume',
   data () {

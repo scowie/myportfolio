@@ -210,7 +210,7 @@
 <script>
 
 
-document.getElementById("about-me").style.height = "0px"
+// document.getElementById("about-me").style.height = "0px"
 
 
 export default {

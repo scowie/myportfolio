@@ -124,6 +124,7 @@
         </div> -->
         
         <!-- RESUME -->
+        <!--
          <div id="resume" style="text-align:justify; font-size:16px; line-height:150%; background-color:#ffffff; padding:10px; border:1px solid red; position:absolute; top:80px;">
     <router-link to="/">
         <md-button class="md-icon-button md-raised" style="position: fixed; top:90px; right:20px;">
@@ -330,6 +331,7 @@
 
         <h3>Professional History</h3>
     </div>
+    -->
 
 
 
@@ -347,9 +349,9 @@
         return appropriateHeight
     }
     
-    const setAppropriateHeightForAboutMe = () => {
-        document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
-    }
+    // const setAppropriateHeightForAboutMe = () => {
+    //     document.getElementById("about-me").style.height = `${getAppropriateHeightForAboutMe()}px`
+    // }
 
 
     export default {

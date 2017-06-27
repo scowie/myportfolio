@@ -1,10 +1,5 @@
 <template>
     <div id="resume" style="text-align:justify; font-size:16px; line-height:150%; background-color:#ffffff; padding:10px;">
-    <router-link to="/">
-        <md-button class="md-icon-button md-raised" style="position: fixed; top:90px; right:20px;">
-            <md-icon>close</md-icon>
-        </md-button>
-    </router-link>
         <h3>Education</h3>
         <ul style="list-style-type: square">
             <li><span style="font-weight:700; font-style:italic">UNC Greensboro</span>, MS Computer Science (3.96), 2015</li>
@@ -57,16 +52,18 @@
         <h3>Courses Completed</h3>
         <ul>
             <li><span style="font-weight:700; font-style:italic">Intro to Computer Science</span> (Object Oriented Programming with Java 1)
+            <!--
             <ul>
                 <li>Identifiers, expressions, data types, and interactivity</li>
                 <li>Decision structures (if, while, for)</li>
                 <li>Functions</li>
                 <li>Arrays</li>
                 <li>Classes</li>
-            </ul>
+            </ul> -->
             
             </li>
             <li><span style="font-weight:700; font-style:italic">Data Structures & Algorithms</span> (Object Oriented Programming with Java 2)
+            <!--
             <ul>
                 <li>The programming process, algorithm analysis and design</li>
                 <li>Object design techniques, including object composition and inheritance</li>
@@ -75,25 +72,28 @@
                 <li>Problem solving using recursion and the analysis of recursive algorithms</li>
                 <li>Analysis of various data structures, including dynamic arrays, 2-D arrays, stack, and queues</li>
                 <li>Polymorphism</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Advanced Data Structures</span> (Object Oriented Programming with Java 3)
+            <!--
             <ul>
                 <li>Algorithms: recursion, divide-and-conquer, backtracking, dynamic programming</li>
                 <li>Binary trees: concepts, representations and traversals, heaps, search trees, 2-3-4 trees, red-black trees</li>
                 <li>Associative structures: sets, maps, hash tables</li>
                 <li>Graphs: concepts, representations and traversals</li> 
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science</span>
+            <!--
             <ul>
                 <li>Sets, Sequences, and Functions</li>
                 <li>Elementary Logic – Proofs</li>  
                 <li>Relations</li>
                 <li>Induction and Recursion – Algorithm Analysis</li> 
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Computer Organization & Assembly Language</span>
+            <!--
             <ul>
                 <li>Data Representation</li>
                 <li>Elements of Assembly Language</li>
@@ -106,9 +106,10 @@
                 <li>Sequential Circuit Analysis & Design</li>
                 <li>Registers, Counters, and Memory</li>
                 <li>Programmable Logic Devices</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span>
+            <!--
             <ul>
                 <li>Randomized algorithms</li>
                 <li>Divide and conquer</li>
@@ -116,9 +117,10 @@
                 <li>Dynamic programming</li>
                 <li>Graph algorithms</li>
                 <li>NP-completeness and approximation algorithms</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Software Engineering</span>
+            <!--
             <ul>
                 <li>Software Life Cycle Models</li>
                 <li>Software Process</li>
@@ -133,18 +135,20 @@
                 <li>Integration and Testing</li>
                 <li>Maintenance</li>
                 <li>Special Topics (e.g. Software Architecture, User Interface Design)</li> 
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science 2</span>
+            <!--
             <ul>
                 <li>Elementary Logic</li>
                 <li>Predicate Logic</li>
                 <li>Discrete Probability</li>
                 <li>Order Relations</li>
                 <li>Regular Languages and Finite Automata</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span>
+            <!--
             <ul>
                 <li>Entity-Relationship Model</li>
                 <li>Relational Data Model and Relational Algebra</li>
@@ -152,9 +156,10 @@
                 <li>Relational Database Design Including Functional Dependencies and Normalization</li>
                 <li>Application Design and Development</li>
                 <li>XML</li> 
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design 2</span>
+            <!--
             <ul>
                 <li>Randomized algorithms</li>
                 <li>Divide and conquer</li>
@@ -162,44 +167,49 @@
                 <li>Dynamic programming</li>
                 <li>Graph algorithms</li>
                 <li>NP-completeness and approximation algorithms</li> 
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Principles of XML Databases</span>
+                <!--
                 <ul>
                     <li>XML Structure and Schema</li>
                     <li>Querying with XPATH, XQUERY</li>
-                </ul>
+                </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Theory of Computation</span>
+            <!--
             <ul>
                 <li>Finite Automata</li>
                 <li>Pushdown Automata and Context-Free Languages</li>
                 <li>Turing Machines and Effective Computability</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Operating Systems</span>
+            <!--
             <ul>
                 <li>Process and Thread Management, Scheduling, Synchronization and Deadlocks</li>
                 <li>Memory Management (Main Memory and Virtual Memory)</li>
                 <li>File Management, I/O Management</li>
                 <li>Protection and Security</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Principles of Computer Networks</span>
+            <!--
             <ul>
                 <li>Communications, Standards and protocols</li>
                 <li>Network models</li>
                 <li>Hop-to-hop mechanisms: Data and signals. Digital transmission. Bandwidth utilization, Transmission media and switching, Error detection and correction.</li>
                 <li>Host-to-host mechanisms: Data link control and Multiple Access. Wired LAN and connecting LANs. Logical addressing and Internet protocol. Address mapping, error reporting and multicasting. Routing of IP packets and packet switching</li>
                 <li>Simulator Modeling: Network programming - simulation of computer networking</li>
-            </ul>
+            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Big Data & Machine Learning</span>
+                <!--
                 <ul>
                     <li>Data processing with Hadoop (map/reduce)</li>
                     <li>Introduction to Machine Learning approaches: Support Vector Machine, Decision Trees and Random Forests, Deep Learning and Neural Networks</li>
                     <li>Project:  Implementation of Support Vector Machine</li>
-                </ul>
+                </ul> -->
             </li>
         </ul>
 

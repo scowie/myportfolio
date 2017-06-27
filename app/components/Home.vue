@@ -48,47 +48,18 @@
     import PortfolioItems from '../data/portfolio-items/portfolio-items'
     import $ from 'jquery'
 
-    const setItemWriteUpProp = () => {console.log('setting item prop')
-        let widthBasis = window.innerWidth
-        if(widthBasis > 1000) {
-            widthBasis = 1000
-        } 
-        const elements = Array.from(document.getElementsByClassName("item-writeup-container"))
-        elements.forEach(element => {
-            element.style.maxWidth = `${widthBasis - 360}px`
-        })
-    }
-
-    const initializeMagnificPopup = () => {
-        const imageContainer = $('.image-container')
-        if(imageContainer) {
-            $('.image-container').each(function() {
-                $(this)
-                .slick({
-                })
-                .magnificPopup({
-                    delegate: 'a:not(.slick-cloned)',
-                    type:'image',
-                    gallery: {
-                        enabled: true
-                    },
-                    closeOnBgClick: false
-                })
-            })
-        }
-    }
-    
-    let stateCheck = setInterval(() => {
-    if (document.readyState === 'complete') {
-        clearInterval(stateCheck)
-        setItemWriteUpProp()
-        initializeMagnificPopup()
-    }
-    }, 100)
-
-
     export default {
         name: 'home',
+        mounted() {
+            this.loadPortfolioItems()
+            let stateCheck = setInterval(() => {
+                if (document.readyState === 'complete') {
+                    clearInterval(stateCheck)
+                    this.setItemWriteUpProp()
+                    this.initializeMagnificPopup()
+                }
+            }, 100)
+        },
         data () {
             return {
                 items: false
@@ -99,10 +70,35 @@
                 PortfolioItems.getAllPortfolioItems().then(items => {
                     this.items = items
                 })
+            },
+            initializeMagnificPopup() {console.log('initializing mag popup')
+                const imageContainer = $('.image-container')
+                if(imageContainer) {
+                    $('.image-container').each(function() {
+                        $(this)
+                        .slick({
+                        })
+                        .magnificPopup({
+                            delegate: 'a:not(.slick-cloned)',
+                            type:'image',
+                            gallery: {
+                                enabled: true
+                            },
+                            closeOnBgClick: false
+                        })
+                    })
+                }
+            },
+            setItemWriteUpProp() {console.log('setting item prop')
+                let widthBasis = window.innerWidth
+                if(widthBasis > 1000) {
+                    widthBasis = 1000
+                } 
+                const elements = Array.from(document.getElementsByClassName("item-writeup-container"))
+                elements.forEach(element => {
+                    element.style.maxWidth = `${widthBasis - 360}px`
+                })
             }
-        },
-        mounted: function() {
-            this.loadPortfolioItems()
         }
     }
 

@@ -23,15 +23,6 @@
         </md-toolbar>
   
         <md-sidenav class="md-left" ref="leftSidenav" @open="open('Left')" @close="close('Left')">
-            <md-toolbar style="background-color:#f6f6f6;">
-                <div class="md-toolbar-container">
-                    <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
-                        <md-icon>navigate_before</md-cion>
-                    </md-button>
-
-                    <h3 class="md-title">Stephen Cowie</h3>
-                </div>
-            </md-toolbar>
 
             <md-list style="background-color:#f6f6f6;">
                 <md-list-item href="mailto:cowiestephenjames@gmail.com">

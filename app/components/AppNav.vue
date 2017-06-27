@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Fixed navbar -->
-        <md-toolbar class="fixed-top-nav" style="background-color:#f6f6f6; border:1px solid blue; position:absolute; top:0px;">
+        <md-toolbar class="fixed-top-nav" style="background-color:#f6f6f6; border:1px solid blue; position:fixed; top:0px;">
             <div class="md-toolbar-container">
                 <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
                     <md-icon>menu</md-cion>

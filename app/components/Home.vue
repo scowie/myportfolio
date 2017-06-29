@@ -2,7 +2,7 @@
     <div>
         <br />
         <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
-            <md-card md-with-hover style="background-color:white; cursor:default; outline:20px solid #bdbdbd;">
+            <md-card md-with-hover style="background-color:white; cursor:default; outline:20px solid #e9e9e9;">
                 <md-card-header style="padding-bottom:10px; color:#424242;">
                     <md-layout md-gutter>
                         <md-layout md-column>

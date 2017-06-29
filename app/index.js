@@ -15,31 +15,6 @@ Vue.use(VueRouter)
 Vue.use(VueMaterial)
 Vue.use(VueProgressiveImage)
 
-Vue.material.registerTheme({
-  default: {
-    primary: {
-      color: 'white',
-      hue: 900
-    },
-    accent: {
-      color: 'red',
-      hue: 900
-    },
-    background: {
-      color: 'grey',
-      hue:100
-    }
-  },
-  teal: {
-    primary: 'blue',
-    accent: 'pink'
-  },
-  purple: {
-    primary: 'purple',
-    accent: 'orange'
-  }
-})
-
 
 /* App component */
 import App from './components/App.vue'

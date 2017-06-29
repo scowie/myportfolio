@@ -29,7 +29,7 @@ export default {
 
 <style>
     .main-content {
-        margin-top: 85px;
+        margin-top: 25px;
         margin-bottom: 120px;
         margin-left: 10px;
         margin-right: 10px;

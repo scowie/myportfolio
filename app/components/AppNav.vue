@@ -1,22 +1,35 @@
 <template>
     <div>
         <!-- Fixed navbar -->
-        <md-toolbar style="background-color:white; top:0px; height:100px; z-index:9; padding-top:20px;">
-            <div class="md-toolbar-container">
-                
-                <h1 class="md-title" style="flex:1; color:black; font-size:32px; font-weight:400">Stephen Cowie</h1>
-                
-                <md-button>
-                    <router-link to="/" id="navbar-link">My Work</router-link>
-                </md-button>
-                <md-button>
-                    <router-link to="/resume" id="navbar-link">Resume</router-link>
-                </md-button>
-                <md-button>
-                    <router-link to="/aboutme" id="navbar-link">Contact</router-link>
-                </md-button>
-            </div>
-        </md-toolbar>
+        <md-layout md-row>
+        
+        <!-- <div style="border:1px solid red; background-color:white; top:0px; width:100%; height:100px; z-index:9; padding-top:20px;" md-row> -->
+                    <md-layout>
+                    <div md-flex>
+                    <h1 style="color:black; font-size:32px; font-weight:400">Stephen Cowie</h1>
+                    </div>
+                    </md-layout>
+                    <md-layout>
+                    <md-button md-flex md-hide-small>
+                        <router-link to="/" id="navbar-link">My Work</router-link>
+                    </md-button>
+            
+                    <md-layout>
+                    <md-button md-flex>
+                        <router-link to="/resume" id="navbar-link">Resume</router-link>
+                    </md-button>
+                    </md-button>
+                    <md-layout>
+                    <md-button md-flex>
+                        <router-link to="/aboutme" id="navbar-link">Contact</router-link>
+                    </md-button>
+                    </md-button>
+                    <md-layout>
+                    <md-button md-flex><router-link to="/" id="navbar-link">Test</router-link></md-button>
+                    </md-button>
+        
+        </div>
+        </md-layout>
 
 
 

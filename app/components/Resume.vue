@@ -232,5 +232,9 @@ export default {
 </script>
     
 <style>
-
+    #resume {
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 </style>

@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div id="about-me-container">
         <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; margin-right:20px; margin-bottom:10px; float:left;">
             <img style="" src="https://s3.amazonaws.com/cowie-public/AAEAAQAAAAAAAAKfAAAAJDNlZGIwM2FkLTgzM2EtNDIzYi04YmM5LTViNDdhNDllOGM3NQ.jpg">
         </div>
@@ -100,5 +100,9 @@ export default {
 </script>
     
 <style>
-
+    #about-me-container {
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 </style>

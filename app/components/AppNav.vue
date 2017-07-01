@@ -1,39 +1,19 @@
 <template>
-    <div>
-        <!-- Fixed navbar -->
-        <md-layout md-row>
-        
-        <!-- <div style="border:1px solid red; background-color:white; top:0px; width:100%; height:100px; z-index:9; padding-top:20px;" md-row> -->
-                    <md-layout>
-                    <div md-flex>
-                    <h1 style="color:black; font-size:32px; font-weight:400">Stephen Cowie</h1>
-                    </div>
-                    </md-layout>
-                    <md-layout>
-                    <md-button md-flex md-hide-small>
-                        <router-link to="/" id="navbar-link">My Work</router-link>
-                    </md-button>
-            
-                    <md-layout>
-                    <md-button md-flex>
-                        <router-link to="/resume" id="navbar-link">Resume</router-link>
-                    </md-button>
-                    </md-button>
-                    <md-layout>
-                    <md-button md-flex>
-                        <router-link to="/aboutme" id="navbar-link">Contact</router-link>
-                    </md-button>
-                    </md-button>
-                    <md-layout>
-                    <md-button md-flex><router-link to="/" id="navbar-link">Test</router-link></md-button>
-                    </md-button>
-        
+    <nav style="max-width:1000px; margin-left:auto; margin-right:auto; margin-top:50px;" class="navbar">
+        <md-icon class="toggle">menu</md-icon>
+        <h1 class="brand">Stephen Cowie</h1>
+        <div class="right">
+            <md-button class="navbar-button">
+                <router-link id="navbar-link" class="link" to="/">My Work</router-link>
+            </md-button>
+            <md-button class="navbar-button">
+                <router-link id="navbar-link" class="link" to="/resume">Resume</router-link>
+            </md-button>
+            <md-button class="navbar-button">
+                <router-link id="navbar-link" class="link" to="/aboutme">Contact</router-link>
+            </md-button>
         </div>
-        </md-layout>
-
-
-
-    </div>
+    </nav>
 </template>
 
 <script>
@@ -54,6 +34,82 @@
 </script>
 
 <style>
+    .navbar {
+        background: #ffffff;
+    }
+    .navbar .toggle, .navbar .brand {
+        display: inline-block;
+    }
+    .navbar .link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        background: white;
+    }
+    .navbar > link:hover, .navbar > .link:active {
+        background: white;
+        text-decoration:none;
+    }
+    .navbar .brand {
+        font-size: 32px;
+        text-align: center;
+        background: #ffffff;
+        color: black;
+        font-weight:400;
+    }
+    .navbar .toggle {
+        padding: 1em;
+        color: black;
+        vertical-align: middle;
+    }
+
+    @media (min-width: 48em) {
+        .navbar {
+            display: flex;
+        }
+        .navbar .left, .navbar .right {
+            display: flex;
+            flex: 1;
+        }
+        .navbar .link {
+            width: auto;
+        }
+        .navbar .right {
+            justify-content: flex-end;
+        }
+        .navbar .toggle {
+            display: none;
+        }
+    }
+
+    .navbar div {
+        display: none;
+    }
+
+    @media (min-width: 48em) {
+        .navbar div {
+            display: flex;
+        }
+    }
+
+    @media (max-width: 48em) {
+        .navbar.active .toggle {
+            background: #ffffff;
+            color: black;
+        }
+        .navbar.active div {
+            display: block;
+        }
+    }
+
+
+    .navbar-button {
+        padding:0px;
+        height:30px;
+        margin-top:20px;
+    }
+
 
     #navbar-link {
         cursor:pointer;
@@ -66,25 +122,4 @@
         text-decoration:none;
     }
 
-    #resume {
-        opacity:1;
-        transition: opacity 0.75s;
-    }
-
-    #about-me {
-        position:relative; 
-        overflow:hidden; 
-        z-index:2; 
-        top:64px; 
-        width:100%; 
-        height: 0px; 
-        /*border-bottom:1px solid gray;*/
-        -webkit-transition: height 1s; /* Safari */
-        transition: height 1s;
-    }
-
-    .about-me-writeup-text {
-        margin-top:0px;
-        font-size:14px;
-    }
 </style>

@@ -1,7 +1,26 @@
 <template>
     <nav style="max-width:1000px; margin-left:auto; margin-right:auto; margin-top:50px;" class="navbar">
-        <md-icon class="toggle">menu</md-icon>
         <h1 class="brand">Stephen Cowie</h1>
+        <div class="drop-down">
+            <h1 class="brand">Stephen Cowie</h1>
+            <md-button 
+                style="z-index:99"
+                class="menu-button"
+                @click.native="toggleShowMenu">
+                <md-icon>menu</md-icon>
+            </md-button>
+            
+            <md-button v-if="showMenuItems" class="navbar-button">
+                <router-link id="navbar-link" class="link" to="/">My Work</router-link>
+            </md-button>
+            <md-button v-if="showMenuItems" class="navbar-button">
+                <router-link id="navbar-link" class="link" to="/resume">Resume</router-link>
+            </md-button>
+            <md-button v-if="showMenuItems" class="navbar-button">
+                <router-link id="navbar-link" class="link" to="/aboutme">Contact</router-link>
+            </md-button>
+            
+        </div>
         <div class="right">
             <md-button class="navbar-button">
                 <router-link id="navbar-link" class="link" to="/">My Work</router-link>
@@ -17,18 +36,18 @@
 </template>
 
 <script>
-    import AboutMe from '../data/about-me'
     import $ from 'jquery'
 
     export default {
     data () {
         return {
-            aboutme: AboutMe,
-            showResume: false
+            showMenuItems: false
         }
     },
     methods: {
-            
+            toggleShowMenu() {console.log('called')
+                this.showMenuItems = !this.showMenuItems
+            }
         }
     }
 </script>
@@ -36,9 +55,6 @@
 <style>
     .navbar {
         background: #ffffff;
-    }
-    .navbar .toggle, .navbar .brand {
-        display: inline-block;
     }
     .navbar .link {
         display: block;
@@ -64,6 +80,12 @@
         vertical-align: middle;
     }
 
+     /* do show the dropdown */
+    .navbar div.drop-down {
+        display:flex;
+        flex-direction:column;
+    }
+
     @media (min-width: 48em) {
         .navbar {
             display: flex;
@@ -78,38 +100,49 @@
         .navbar .right {
             justify-content: flex-end;
         }
+        /* dont show toggle when screen is large */
         .navbar .toggle {
             display: none;
         }
     }
 
-    .navbar div {
+    /* when screen is small don't show right side */
+    .navbar div.right {
         display: none;
     }
 
+    .navbar div.drop-down {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar > .brand {
+        display: none;
+    }
+   
+
     @media (min-width: 48em) {
-        .navbar div {
+        .navbar div.right {
             display: flex;
         }
-    }
-
-    @media (max-width: 48em) {
-        .navbar.active .toggle {
-            background: #ffffff;
-            color: black;
+        .navbar div.drop-down {
+            display: none;
         }
-        .navbar.active div {
-            display: block;
+        .navbar  > .brand {
+            display: inline-block;
         }
     }
-
 
     .navbar-button {
         padding:0px;
         height:30px;
         margin-top:20px;
     }
-
+    .navbar .menu-button {
+        width:100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 
     #navbar-link {
         cursor:pointer;

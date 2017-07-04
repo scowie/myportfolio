@@ -11,25 +11,49 @@
             </md-button>
             
             <md-button v-if="showMenuItems" class="navbar-button">
-                <router-link id="navbar-link" class="link" to="/">My Work</router-link>
+                <router-link 
+                    @click.native="setActiveLink('navbar-link-mywork')"
+                    id="navbar-link-mywork" 
+                    class="link" 
+                    to="/">My Work</router-link>
             </md-button>
             <md-button v-if="showMenuItems" class="navbar-button">
-                <router-link id="navbar-link" class="link" to="/resume">Resume</router-link>
+                <router-link 
+                    @click.native="setActiveLink('navbar-link-resume')"
+                    id="navbar-link-resume" 
+                    class="link" 
+                    to="/resume">Resume</router-link>
             </md-button>
             <md-button v-if="showMenuItems" class="navbar-button">
-                <router-link id="navbar-link" class="link" to="/aboutme">Contact</router-link>
+                <router-link 
+                    @click.native="setActiveLink('navbar-link-aboutme')"
+                    id="navbar-link-aboutme" 
+                    class="link" 
+                    to="/aboutme">Contact</router-link>
             </md-button>
             
         </div>
         <div class="right">
             <md-button class="navbar-button">
-                <router-link id="navbar-link" class="link" to="/">My Work</router-link>
+                <router-link 
+                    @click.native="setActiveLink('navbar-link-mywork')"
+                    id="navbar-link-mywork" 
+                    class="link" 
+                    to="/">My Work</router-link>
             </md-button>
             <md-button class="navbar-button">
-                <router-link id="navbar-link" class="link" to="/resume">Resume</router-link>
+                <router-link 
+                    @click.native="setActiveLink('navbar-link-resume')"
+                    id="navbar-link-resume" 
+                    class="link" 
+                    to="/resume">Resume</router-link>
             </md-button>
             <md-button class="navbar-button">
-                <router-link id="navbar-link" class="link" to="/aboutme">Contact</router-link>
+                <router-link 
+                    @click.native="setActiveLink('navbar-link-aboutme')"
+                    id="navbar-link-aboutme" 
+                    class="link" 
+                    to="/aboutme">Contact</router-link>
             </md-button>
         </div>
     </nav>
@@ -45,8 +69,33 @@
         }
     },
     methods: {
-            toggleShowMenu() {console.log('called')
+            toggleShowMenu() {
                 this.showMenuItems = !this.showMenuItems
+            },
+            setActiveLink(link) {
+                switch(link) {
+                    case "navbar-link-aboutme":
+                        {   debugger
+                            $(`#${link}`).css('color', 'red')
+                            $("#navbar-link-resume").css('color', 'black')
+                            $("#navbar-link-mywork").css('color', 'black')
+                            break;
+                        }
+                    case "navbar-link-resume":
+                        {   debugger
+                            $(`#${link}`).css('color', 'red')
+                            $("#navbar-link-aboutme").css('color', 'black')
+                            $("#navbar-link-mywork").css('color', 'black')
+                            break;
+                        }
+                    default: 
+                        {   debugger
+                            $(`#${link}`).css('color', 'red')
+                            $("#navbar-link-resume").css('color', 'black')
+                            $("#navbar-link-aboutme").css('color', 'black')
+                        }
+                }
+                
             }
         }
     }
@@ -144,13 +193,30 @@
         margin-right:auto;
     }
 
-    #navbar-link {
+    #navbar-link-resume {
         cursor:pointer;
         color:black;
         font-size:13px;
     }
-
-    #navbar-link:hover {
+    #navbar-link-aboutme {
+        cursor:pointer;
+        color:black;
+        font-size:13px;
+    }
+    #navbar-link-mywork {
+        cursor:pointer;
+        color:black;
+        font-size:13px;
+    }
+    #navbar-link-resume:hover {
+        color:#bdbdbd;
+        text-decoration:none;
+    }
+    #navbar-link-aboutme:hover {
+        color:#bdbdbd;
+        text-decoration:none;
+    }
+    #navbar-link-mywork:hover {
         color:#bdbdbd;
         text-decoration:none;
     }

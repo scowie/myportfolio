@@ -9,7 +9,7 @@
         <h3>Technical Skills</h3>
         <ul style="list-style: none;">
             <li>
-                <label style="font-weight:700; font-style:italic">Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack</span>
+                <label style="font-weight:700; font-style:italic">Frontend:</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack, NPM Scripts, Material Design, Bootstrap</span>
             </li>
             <li>
                 <label style="font-weight:700; font-style:italic">API Development:</label><span>   RESTful design, Express, Node.js, C# .NET Web Api, PHP, Golang, Postman, Swagger</span>
@@ -25,16 +25,16 @@
         <ul style="list-style-type: square">
             <li>
             <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2016 - Current)
-                Worked on an Agile development team to build a variety of new single page web applications and APIs to provide SaaS products to serve internal and external business users and software developers.
+                Software engineer on an Agile development team.  Built a variety of new single page web applications and APIs to provide SaaS products to serve internal and external business users and software developers.  Fullstack development on complex microservices-based software system.
             </li>
             <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span> (Fall 2015)
                 Developed and deployed a working prototype of an original new software application idea.  The app was built using MEAN stack and deployed to IBM Bluemix.  
             </li>
             <li><span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (Summer 2015)
-                Completed 3 projects in the 10 weeks.  The first was a C# console application that recursively cleaned unneeded files from servers on sleep/wake cycle.  The second was to set up a local development environment to work on an existing Django/Python front-end application that connected to backend services.  The third project was a new .NET Web API and AngularJS single page application to perform CRUD operations on JSON files that defined AWS environment definitions.
+                Completed 3 projects in the 10 weeks.  A C# console application that recursively cleaned unneeded files from servers using a sleep/wake cycle.  Set up a local development environment to work on an existing Django/Python front-end application that connected to backend services.  Built a new .NET Web API and AngularJS single page application to perform CRUD operations on JSON files that defined AWS environment definitions.
             </li>
             <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span> (2014)
-                Responsive website displaying photography galleries and images, including a content management features.
+                Responsive website displaying photography galleries and images, including a content management section.
             </li>
             <li><span style="font-weight:700; font-style:italic">MS Comp Science Projects</span> (2013 - 2014)
                 <ul>

@@ -1,5 +1,10 @@
 <template>
     <div>
+        <div id="about-me-writeup-container">
+            <p class="about-me-writeup-text" v-html="aboutmeText.text" style="text-align:justify; font-size:16px; line-height:150%;">
+            </p>
+        </div>
+
         <br />
         <div v-for="item in items" style="max-width:1000px; margin-left:auto; margin-right:auto;">
             <md-card md-with-hover style="background-color:white; cursor:default;">
@@ -46,6 +51,7 @@
 
 <script>
     import PortfolioItems from '../data/portfolio-items/portfolio-items'
+    import AboutMe from '../data/about-me'
     import $ from 'jquery'
 
     export default {
@@ -62,7 +68,8 @@
         },
         data () {
             return {
-                items: false
+                items: false,
+                aboutmeText: AboutMe
             }
         },
         methods: {
@@ -110,6 +117,12 @@
         margin-top:0px;
         font-size:16px;
         line-height:150%;
+    }
+    #about-me-writeup-container {
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:20px;
     }
 
 </style>

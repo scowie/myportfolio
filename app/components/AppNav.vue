@@ -75,24 +75,24 @@
             setActiveLink(link) {
                 switch(link) {
                     case "navbar-link-aboutme":
-                        {   debugger
-                            $(`#${link}`).css('color', 'red')
-                            $("#navbar-link-resume").css('color', 'black')
-                            $("#navbar-link-mywork").css('color', 'black')
+                        {   
+                            $(`#${link}`).css('color', 'black')
+                            $("#navbar-link-resume").css('color', '#616161')
+                            $("#navbar-link-mywork").css('color', '#616161')
                             break;
                         }
                     case "navbar-link-resume":
-                        {   debugger
-                            $(`#${link}`).css('color', 'red')
-                            $("#navbar-link-aboutme").css('color', 'black')
-                            $("#navbar-link-mywork").css('color', 'black')
+                        {   
+                            $(`#${link}`).css('color', 'black')
+                            $("#navbar-link-aboutme").css('color', '#616161')
+                            $("#navbar-link-mywork").css('color', '#616161')
                             break;
                         }
                     default: 
-                        {   debugger
-                            $(`#${link}`).css('color', 'red')
-                            $("#navbar-link-resume").css('color', 'black')
-                            $("#navbar-link-aboutme").css('color', 'black')
+                        {   
+                            $(`#${link}`).css('color', 'black')
+                            $("#navbar-link-resume").css('color', '#616161')
+                            $("#navbar-link-aboutme").css('color', '#616161')
                         }
                 }
                 
@@ -195,12 +195,12 @@
 
     #navbar-link-resume {
         cursor:pointer;
-        color:black;
+        color:#616161;
         font-size:13px;
     }
     #navbar-link-aboutme {
         cursor:pointer;
-        color:black;
+        color:#616161;
         font-size:13px;
     }
     #navbar-link-mywork {
@@ -209,15 +209,15 @@
         font-size:13px;
     }
     #navbar-link-resume:hover {
-        color:#bdbdbd;
+        color:black;
         text-decoration:none;
     }
     #navbar-link-aboutme:hover {
-        color:#bdbdbd;
+        color:black;
         text-decoration:none;
     }
     #navbar-link-mywork:hover {
-        color:#bdbdbd;
+        color:black;
         text-decoration:none;
     }
 

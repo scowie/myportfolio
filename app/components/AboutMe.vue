@@ -1,17 +1,15 @@
 <template>
    <div id="about-me-container">
+        <!--
         <div id="about-me-image-container" style="height:125x; width:120px; margin-top:20px; margin-left:20px; margin-right:20px; margin-bottom:10px; float:left;">
             <img style="" src="https://s3.amazonaws.com/cowie-public/AAEAAQAAAAAAAAKfAAAAJDNlZGIwM2FkLTgzM2EtNDIzYi04YmM5LTViNDdhNDllOGM3NQ.jpg">
         </div>
-
-            
-            
-        </div>   
+         -->
          <md-list>
-                <md-list-item href="mailto:cowiestephenjames@gmail.com">
+                <md-list-item href="mailto:cowiestephenjames@gmail.com" style="width:300px;">
                     <span>cowiestephenjames@gmail.com</span>
                 </md-list-item>
-                <md-list-item href="https://github.com/scowie" target="_blank">
+                <md-list-item href="https://github.com/scowie" target="_blank" style="width:300px;">
                     <md-icon>
                     <svg width="20px" height="20px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
@@ -27,7 +25,7 @@
                     </md-icon>
                    <span>scowie</span>
                 </md-list-item>
-                <md-list-item href="https://www.linkedin.com/in/stephenjamescowie" target="_blank">
+                <md-list-item href="https://www.linkedin.com/in/stephenjamescowie" target="_blank" style="width:300px;">
                     <md-icon>
                         <svg width="20px" height="20px" viewBox="0 0 44 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
@@ -43,7 +41,7 @@
                     </md-icon>
                     <span>stephenjamescowie</span>
                 </md-list-item>
-                <md-list-item href="https://www.facebook.com/stephen.cowie" target="_blank">
+                <md-list-item href="https://www.facebook.com/stephen.cowie" target="_blank" style="width:300px;">
                     <md-icon>
                         <svg width="20px" height="20px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
@@ -59,7 +57,7 @@
                     </md-icon>
                     <span>stephen.cowie</span>
                 </md-list-item>
-                <md-list-item href="https://twitter.com/stephen_cowie" target="_blank">
+                <md-list-item href="https://twitter.com/stephen_cowie" target="_blank" style="width:300px;">
                     <md-icon>
                         <svg width="20px" height="20px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->

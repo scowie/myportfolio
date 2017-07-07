@@ -1,5 +1,5 @@
 <template>
-    <nav style="max-width:1000px; margin-left:auto; margin-right:auto; margin-top:50px;" class="navbar">
+    <nav style="max-width:1000px; margin-left:auto; margin-right:auto; margin-top:40px;" class="navbar">
         <h1 class="brand">Stephen Cowie</h1>
         <div class="drop-down">
             <h1 class="brand">Stephen Cowie</h1>
@@ -107,6 +107,7 @@
     }
     .navbar .link {
         display: block;
+        font-weight:600;
         width: 100%;
         text-align: center;
         text-decoration: none;
@@ -121,7 +122,7 @@
         text-align: center;
         background: #ffffff;
         color: black;
-        font-weight:400;
+        font-weight:500;
     }
     .navbar .toggle {
         padding: 1em;

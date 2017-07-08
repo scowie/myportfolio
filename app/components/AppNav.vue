@@ -61,8 +61,21 @@
 
 <script>
     import $ from 'jquery'
+    import {EventBus} from '../services/event-bus'
 
     export default {
+    mounted() {
+        const hash = window.location.hash
+        switch(hash) {
+            case "#/resume":
+                this.setActiveLink('navbar-link-resume')
+                break
+            case "#/aboutme":
+                this.setActiveLink('navbar-link-aboutme')
+                break
+            default: 
+        }
+    },
     data () {
         return {
             showMenuItems: false

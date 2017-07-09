@@ -10,25 +10,25 @@
                 <md-icon>menu</md-icon>
             </md-button>
             
-            <md-button v-if="showMenuItems" class="navbar-button">
+            <md-button v-show="showMenuItems" class="navbar-button">
                 <router-link 
                     @click.native="setActiveLink('navbar-link-mywork')"
                     id="navbar-link-mywork" 
-                    class="link" 
+                    class="link navbar-link-mywork" 
                     to="/">My Work</router-link>
             </md-button>
-            <md-button v-if="showMenuItems" class="navbar-button">
+            <md-button v-show="showMenuItems" class="navbar-button">
                 <router-link 
                     @click.native="setActiveLink('navbar-link-resume')"
                     id="navbar-link-resume" 
-                    class="link" 
+                    class="link navbar-link-resume" 
                     to="/resume">Resume</router-link>
             </md-button>
-            <md-button v-if="showMenuItems" class="navbar-button">
+            <md-button v-show="showMenuItems" class="navbar-button">
                 <router-link 
                     @click.native="setActiveLink('navbar-link-aboutme')"
                     id="navbar-link-aboutme" 
-                    class="link" 
+                    class="link navbar-link-aboutme" 
                     to="/aboutme">Contact</router-link>
             </md-button>
             
@@ -38,24 +38,24 @@
                 <router-link 
                     @click.native="setActiveLink('navbar-link-mywork')"
                     id="navbar-link-mywork" 
-                    class="link" 
+                    class="link navbar-link-mywork" 
                     to="/">My Work</router-link>
             </md-button>
             <md-button class="navbar-button">
                 <router-link 
                     @click.native="setActiveLink('navbar-link-resume')"
                     id="navbar-link-resume" 
-                    class="link" 
+                    class="link navbar-link-resume" 
                     to="/resume">Resume</router-link>
             </md-button>
             <md-button class="navbar-button">
                 <router-link 
                     @click.native="setActiveLink('navbar-link-aboutme')"
                     id="navbar-link-aboutme" 
-                    class="link" 
+                    class="link navbar-link-aboutme" 
                     to="/aboutme">Contact</router-link>
             </md-button>
-        </div>
+        </div> 
     </nav>
 </template>
 
@@ -64,7 +64,7 @@
     import {EventBus} from '../services/event-bus'
 
     export default {
-    mounted() {
+    mounted() {console.log(window.location.hash)
         const hash = window.location.hash
         switch(hash) {
             case "#/resume":
@@ -89,23 +89,23 @@
                 switch(link) {
                     case "navbar-link-aboutme":
                         {   
-                            $(`#${link}`).css('color', 'black')
-                            $("#navbar-link-resume").css('color', '#616161')
-                            $("#navbar-link-mywork").css('color', '#616161')
+                            $(`.${link}`).css('color', 'black')
+                            $(".navbar-link-resume").css('color', '#616161')
+                            $(".navbar-link-mywork").css('color', '#616161')
                             break;
                         }
                     case "navbar-link-resume":
-                        {   
-                            $(`#${link}`).css('color', 'black')
-                            $("#navbar-link-aboutme").css('color', '#616161')
-                            $("#navbar-link-mywork").css('color', '#616161')
+                        {   console.log($(`.${link}`))
+                            $(`.${link}`).css('color', 'black')
+                            $(".navbar-link-aboutme").css('color', '#616161')
+                            $(".navbar-link-mywork").css('color', '#616161')
                             break;
                         }
                     default: 
                         {   
-                            $(`#${link}`).css('color', 'black')
-                            $("#navbar-link-resume").css('color', '#616161')
-                            $("#navbar-link-aboutme").css('color', '#616161')
+                            $(`.${link}`).css('color', 'black')
+                            $(".navbar-link-resume").css('color', '#616161')
+                            $(".navbar-link-aboutme").css('color', '#616161')
                         }
                 }
                 

@@ -214,6 +214,23 @@
         </ul>
 
         <h3>Professional History</h3>
+        <ul style="list-style-type: square">
+            <li>
+            <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2015 - Current)
+                Software engineer on an Agile development team.  Built a variety of new single page web applications and APIs to provide SaaS products to serve internal and external business users and software developers.  Fullstack development on complex microservices-based software system.
+            </li>
+            <li>
+            <span style="font-weight:700; font-style:italic">Joyce Engineering, Inc.</span> (2004 - 2015)
+                Senior Civil/Environmental Engineer specializaing in solid waste management, landfill design, air permitting and compliance.
+            </li>
+            <li>
+            <span style="font-weight:700; font-style:italic">North Carolina State University</span> (2001 - 2004)
+                Research assistant in Dept. of Senior Civil/Environmental Engineering.
+            </li>
+            <li>
+            <span style="font-weight:700; font-style:italic">Cleveland Indians</span> (1999 - 2001)
+                Minor League baseball pitcher for Mahoning Valley Scrappers, Columbus RedStixx and Kinston Indians.
+            </li>
     </div>
 </template>
 

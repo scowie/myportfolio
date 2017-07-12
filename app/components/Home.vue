@@ -56,6 +56,9 @@
 
     export default {
         name: 'home',
+        created() {
+            window.addEventListener('resize', this.setItemWriteUpProp)
+        },
         mounted() {
             this.loadPortfolioItems()
             let stateCheck = setInterval(() => {
@@ -103,7 +106,7 @@
                 } 
                 const elements = Array.from(document.getElementsByClassName("item-writeup-container"))
                 elements.forEach(element => {
-                    element.style.maxWidth = `${widthBasis - 360}px`
+                    element.style.maxWidth = `${widthBasis - 380}px`
                 })
             }
         }

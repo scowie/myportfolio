@@ -1,4 +1,5 @@
 <template>
+    <!--
     <div>
         <div id="about-this-site" >
             <p style="margin-left:20px;">
@@ -18,6 +19,7 @@
             </md-bottom-bar-item>
         </md-bottom-bar>
     </div>
+    -->
 </template>
 
 <script>

@@ -15,7 +15,7 @@
                 <label style="font-weight:700; font-style:italic">API Development:&nbsp&nbsp</label><span>   RESTful design, Express, Node.js, C# .NET Web Api, PHP, Golang, Postman, Swagger</span>
             </li>
             <li>
-                <label style="font-weight:700; font-style:italic">Databases:&nbsp&nbsp</label><span>   MongoDB, Mongoose, GridFS, Couchbase, DynamoDB, PostgreSQL, MySQL, relational database design</span>
+                <label style="font-weight:700; font-style:italic">Databases:&nbsp&nbsp</label><span>   MongoDB, Mongoose, Couchbase, DynamoDB, PostgreSQL, MySQL, relational database design</span>
             </li>
             <li>
                 <label style="font-weight:700; font-style:italic">Cloud/Distributed Systems:&nbsp&nbsp</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>

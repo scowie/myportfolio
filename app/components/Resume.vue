@@ -225,7 +225,7 @@
             </li>
             <li>
             <span style="font-weight:700; font-style:italic">North Carolina State University</span> (2001 - 2004)
-                Research assistant in Dept. of Senior Civil/Environmental Engineering.
+                Research assistant in Dept. of Civil/Environmental Engineering.
             </li>
             <li>
             <span style="font-weight:700; font-style:italic">Cleveland Indians</span> (1999 - 2001)

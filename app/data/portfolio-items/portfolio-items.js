@@ -7,9 +7,7 @@ import BigDataMachineLearning from './big-data-machine-learning'
 const portfolioItems = [
   PortfolioManager,
   HomeBaseX,
-  WebAnimation,
-  SusanCalkinsPhotography,
-  BigDataMachineLearning
+  SusanCalkinsPhotography
 ]
 
 class PortfolioItems {

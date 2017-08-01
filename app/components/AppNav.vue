@@ -115,6 +115,7 @@
 </script>
 
 <style>
+
     .navbar {
         background: #ffffff;
     }
@@ -131,11 +132,12 @@
         text-decoration:none;
     }
     .navbar .brand {
-        font-size: 32px;
+        font-family: 'Ubuntu';
+        font-size: 36px;
         text-align: center;
         background: #ffffff;
         color: black;
-        font-weight:500;
+        font-weight:600;
     }
     .navbar .toggle {
         padding: 1em;
@@ -208,16 +210,19 @@
     }
 
     #navbar-link-resume {
+        font-family: 'Ubuntu';
         cursor:pointer;
         color:#616161;
         font-size:13px;
     }
     #navbar-link-aboutme {
+        font-family: 'Ubuntu';
         cursor:pointer;
         color:#616161;
         font-size:13px;
     }
     #navbar-link-mywork {
+        font-family: 'Ubuntu';
         cursor:pointer;
         color:black;
         font-size:13px;

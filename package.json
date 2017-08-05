@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "description": "personal work portfolio",
+  "description": "muy personal work portfolio",
   "main": "index.js",
   "scripts": {
     "install-fix": "npm i --only=\"production\" && npm i --only=\"dev\" --registry=https://registry.npmjs.org",

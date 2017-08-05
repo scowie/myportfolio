@@ -8,7 +8,8 @@
     "build": "webpack --colors --watch",
     "build-minified": "webpack --minify",
     "serve": "live-server --host=localhost --port=8080 --watch=./dist/app/index.html,./dist/app/app.min.js --open=/dist/app",
-    "start": "concurrently --success first --kill-others \"npm run build\" \"npm run serve\""
+    "start-local": "concurrently --success first --kill-others \"npm run build\" \"npm run serve\"",
+    "start": "node server.js"
   },
   "author": "Stephen Cowie",
   "license": "ISC",
@@ -19,7 +20,10 @@
     "vue-material": "^0.7.1",
     "vue-progressive-image": "^1.3.2",
     "vue-resource": "^1.2.0",
-    "vue-router": "^2.2.0"
+    "vue-router": "^2.2.0",
+    "compression": "https://registry.npmjs.org/compression/-/compression-1.6.1.tgz",
+    "express": "^4.13.4",
+    "open": "0.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.14.0",

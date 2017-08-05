@@ -10,10 +10,10 @@ var port = (process.env.PORT || 8080);
 var app = express();
 
 app.use(compression());
-app.use(express.static('dist'));
+app.use(express.static('dist/app'));
 
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, './dist/index.html'));
+  res.sendFile(path.join(__dirname, './dist/app/index.html'));
 });
 
 app.listen(port);

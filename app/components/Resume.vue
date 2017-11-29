@@ -12,13 +12,13 @@
                 <label style="font-weight:700; font-style:italic">Frontend:&nbsp&nbsp</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack, NPM Scripts, Material Design, Bootstrap</span>
             </li>
             <li>
-                <label style="font-weight:700; font-style:italic">API Development:&nbsp&nbsp</label><span>   RESTful design, Express, Node.js, C# .NET Web Api, PHP, Golang, Postman, Swagger</span>
+                <label style="font-weight:700; font-style:italic">API Development:&nbsp&nbsp</label><span>   RESTful design, Express, Node.js, C#, PHP, Golang, Postman, Swagger</span>
             </li>
             <li>
                 <label style="font-weight:700; font-style:italic">Databases:&nbsp&nbsp</label><span>   MongoDB, Mongoose, Couchbase, DynamoDB, PostgreSQL, MySQL, relational database design</span>
             </li>
             <li>
-                <label style="font-weight:700; font-style:italic">Cloud/Distributed Systems:&nbsp&nbsp</label><span>   Amazon Web Services, IBM Bluemix, Hadoop</span>
+                <label style="font-weight:700; font-style:italic">Cloud/Distributed Systems:&nbsp&nbsp</label><span>   Amazon Web Services(Lambda, Cloudformation, ApiGateway, CodeBuild, CodePipeline, DynamoDB, S3), IBM Bluemix, Hadoop</span>
             </li>
         </ul>
         <h3>Relevant Experience</h3>

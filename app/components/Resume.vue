@@ -9,207 +9,184 @@
         <h3>Technical Skills</h3>
         <ul style="list-style: none;">
             <li>
-                <label style="font-weight:700; font-style:italic">Frontend:&nbsp&nbsp</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Gulp, Webpack, NPM Scripts, Material Design, Bootstrap</span>
+                <label style="font-weight:700; font-style:italic">Frontend:&nbsp&nbsp</label><span>   HTML, CSS, Javascript, Angular, React, Vue, Redux, JQuery, Webpack, NPM Scripts, Material Design, Bootstrap</span>
             </li>
             <li>
-                <label style="font-weight:700; font-style:italic">API Development:&nbsp&nbsp</label><span>   RESTful design, Express, Node.js, C#, PHP, Golang, Postman, Swagger</span>
+                <label style="font-weight:700; font-style:italic">API Development:&nbsp&nbsp</label><span>   REST, Express, Node.js, C#, PHP, Go, AWS Api-Gateway, Postman, Swagger</span>
             </li>
             <li>
-                <label style="font-weight:700; font-style:italic">Databases:&nbsp&nbsp</label><span>   MongoDB, Mongoose, Couchbase, DynamoDB, PostgreSQL, MySQL, relational database design</span>
+                <label style="font-weight:700; font-style:italic">Databases:&nbsp&nbsp</label><span>   MongoDB, Couchbase, DynamoDB, PostgreSQL, MySQL, relational database design</span>
             </li>
             <li>
                 <label style="font-weight:700; font-style:italic">Cloud/Distributed Systems:&nbsp&nbsp</label><span>   Amazon Web Services(Lambda, Cloudformation, ApiGateway, CodeBuild, CodePipeline, DynamoDB, S3), IBM Bluemix, Hadoop</span>
             </li>
         </ul>
         <h3>Relevant Experience</h3>
+        <h4>2017</h4>
         <ul style="list-style-type: square">
             <li>
-            <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2016 - Current)
-                Software engineer on an Agile development team.  Built a variety of new single page web applications and APIs to provide SaaS products to serve internal and external business users and software developers.  Fullstack development on complex microservices-based software system.
+            <span style="font-weight:700;">Inmar, Inc.</span>
+            <span style="font-style:italic">
+                Fullstack software engineer on an Agile development team.
+            </span>
+                As part of a 2-person squad, delivered 10 new SaaS (software as a service) products to serve internal and external business users and developers.  Front-end web development of single page web applications (SPAs) using Vue.js as a javascript framework.  Platform architecture built with Go, .NET, AWS-Lambda, DynamoDB, S3.
+                Created and automated deployment of an API Gateway with Lambda functions and DynamoDB using AWS Serverless Application Model (SAM) and Cloudformation.
+                Contributed to shared front-end component libraries using vanilla javascript.
             </li>
-            <li><span style="font-weight:700; font-style:italic">MS Comp Science Final Project</span> (Fall 2015)
-                Developed and deployed a working prototype of an original new software application idea.  The app was built using MEAN stack and deployed to IBM Bluemix.  
+            <li><span style="font-weight:700;">Portfolio Manager</span>
+                React + Redux development of a web application for image portfolio content management.  Created API via AWS serverless approach with CodePipeline automation for continuous deployment.  
             </li>
-            <li><span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (Summer 2015)
-                Completed 3 projects in the 10 weeks.  A C# console application that recursively cleaned unneeded files from servers using a sleep/wake cycle.  Set up a local development environment to work on an existing Django/Python front-end application that connected to backend services.  Built a new .NET Web API and AngularJS single page application to perform CRUD operations on JSON files that defined AWS environment definitions.
+            <li><span style="font-weight:700;">Personal Portfolio Website</span>
+                Developed website to showcase samples of my software development work.  Website built with Vue.js and Vue Material.
             </li>
-            <li><span style="font-weight:700; font-style:italic">Susan Calkins Photography</span> (2014)
-                Responsive website displaying photography galleries and images, including a content management section.
+        </ul>
+        <h4>2016</h4>
+        <ul style="list-style-type: square">
+            <li>
+            <span style="font-weight:700;">Inmar, Inc.</span>
+                Built new features and improved quality of existing code in an AngularJS web application, and a Django/Python web application.  Developed an overall understanding of a complex microservices based system and helped maintain legacy software.
             </li>
-            <li><span style="font-weight:700; font-style:italic">MS Comp Science Projects</span> (2013 - 2014)
-                <ul>
-                    <li>Network Animation</li>
-                    <li>Big Data Machine Learning</li>
-                    <li>Graph: Shortest Distance Algorithm Analysis</li>
-                    <li>DNA Sequence Assembly Algorithms</li>
-                    <li>Hadoop Cluster</li>
-                    <li>SQL Database Web Application</li>
-                    <li>Java Desktop Application</li>
-                </ul>
+            <li><span style="font-weight:700;">Portfolio Manager</span>
+                Began development of React + Redux web application for image portfolio content management.  API development using Node.js and MongoDB. 
+            </li>
+        </ul>
+        <h4>2015</h4>
+        <ul style="list-style-type: square">
+            <li>
+            <span style="font-weight:700;">Inmar, Inc.</span>
+            <span style="font-style:italic">
+                Software Engineering 10-week internship
+            </span>
+                Built a new .NET Web API and AngularJS single page application to perform CRUD (create, read, update, delete) operations on JSON files that defined AWS environment definitions.
+                Developed a C# console application that recursively cleaned unneeded files from servers using a sleep/wake cycle. 
+                Set up a local development environment to work on an existing Django/Python front-end application that connected to backend services. 
+            </li>
+            <li><span style="font-weight:700;">UNCG Computer Science Final Project</span>
+                Developed and deployed a working prototype of an original new software application idea. The app was built using MEAN stack (MongoDB, Express, Angular,Node.js) and deployed to IBM Bluemix with automated pipeline.
+            </li>
+        </ul>
+        <h4>2014</h4>
+        <ul style="list-style-type: square">
+            <li>
+            <span style="font-weight:700;">Photography Portfolio Website</span>
+                www.susancalkinsphotography.com
+                Designed and coded custom photography website for a client.
+                Provided a graphical user interface for site owner to manage content by creating galleries, uploading photos, deleting galleries/photos and other similar tasks (PHP and XML used to implement content management functionality).
+                Optimized image loading through use of pre-loading, lazy-loading and multiple thumbnail sizes.
+            </li>
+            <li><span style="font-weight:700;">UNCG Comp Science Projects</span>
+                <br/>
+                    <span style="font-style:italic">
+                        Network Animation
+                    </span>
+                <br/>
+                Programmed an animation to illustrate transmission of data across a network, using HTML, CSS and Javascript (GSAP javascript plugin used for animation).
+                <br/>
+                <br/>
+                    <span style="font-style:italic">
+                        Big Data Machine Learning
+                    </span>
+                <br/>
+                Implemented a Support Vector Machine (SVM) data classification algorithm in R-Studio.  Set up a Hadoop environment in Linux (Ubuntu 12.04) and successfully processed MapReduce jobs in Java (Apache Hadoop) and in R-Hadoop.  Tested performance of SVM on classification of hyperspectral image data in Hadoop and non-Hadoop environments.
+                <br/>
+                <br/>
+                    <span style="font-style:italic">
+                        Graph: Shortest Distance Algorithm Analysis
+                    </span>
+                <br/>
+                Evaluated techniques for computing shortest distance between any 2 graph nodes. Described breadth-first search (BFS) algorithm followed by discussion of challenges of big data and overview of Google’s Pregal framework for parallel processing of shortest path with message passing.
+                <br/>
+                <br/>
+                    <span style="font-style:italic">
+                        DNA Sequence Assembly Algorithms
+                    </span>
+                <br/>
+                Presentation of de Bruijn Graph technique for DNA sequence assembly.
+            </li>
+        </ul>
+        <h4>2013</h4>
+        <ul style="list-style-type: square">
+            <li>
+            <span style="font-weight:700;">UNCG Computer Science Projects</span>
+            <br/>
+                <span style="font-style:italic">
+                    Hadoop Cluster
+                </span>
+            <br/>
+            Set up a 4-node Hadoop cluster and demonstrated distributed storage and parallel processing using map-reduce word count example program.
+            <br/>
+            <br/>
+                <span style="font-style:italic">
+                    SQL Database Web Application
+                </span>
+            <br/>
+            Worked in a 2-person team to design a relational database for an application and create a website to allow user interaction (querying) of the database (MySQL) through web forms (HTML, CSS, PHP).
+            <br/>
+            <br/>
+                <span style="font-style:italic">
+                    Java Desktop Application
+                </span>
+            <br/>
+            Developed a software product from start to finish in a 3-person team, including:
+            <br/>
+			- Prepared a requirements document with use-case diagrams and stories,
+            <br/>
+			- Demonstrated a prototype of the graphical user interface and collected 			user feedback from the course instructor and other students,
+            <br/>
+			- Developed class diagrams and state diagrams,
+            <br/>
+			- Performed testing and de-bugging.
+            </li>
+        </ul>
+        <h4>2004 - 2015</h4>
+        <ul style="list-style-type: square">
+            <li>
+            <span style="font-weight:700;">Joyce Engineering, Inc.</span>
+            <br/>
+                <span style="font-style:italic">
+                    Senior Project Engineer / Technical Consultant
+                </span>
+            <br/>
+            - Licensed Professional Civil Engineer,
+            <br/>
+			- Company lead engineer in air quality, landfill gas utilization projects,
+            <br/>
+			- Experience with project management, leadership, business development 	and client relations.
             </li>
         </ul>
 
-        <h3>Courses Completed</h3>
+        <h3>Computer Science Courses Completed</h3>
         <ul>
             <li><span style="font-weight:700; font-style:italic">Intro to Computer Science</span> (Object Oriented Programming with Java 1)
-            <!--
-            <ul>
-                <li>Identifiers, expressions, data types, and interactivity</li>
-                <li>Decision structures (if, while, for)</li>
-                <li>Functions</li>
-                <li>Arrays</li>
-                <li>Classes</li>
-            </ul> -->
             
             </li>
             <li><span style="font-weight:700; font-style:italic">Data Structures & Algorithms</span> (Object Oriented Programming with Java 2)
-            <!--
-            <ul>
-                <li>The programming process, algorithm analysis and design</li>
-                <li>Object design techniques, including object composition and inheritance</li>
-                <li>Sorting and searching algorithm design and analysis</li>
-                <li>Making algorithms generic using generic data types</li>
-                <li>Problem solving using recursion and the analysis of recursive algorithms</li>
-                <li>Analysis of various data structures, including dynamic arrays, 2-D arrays, stack, and queues</li>
-                <li>Polymorphism</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Advanced Data Structures</span> (Object Oriented Programming with Java 3)
-            <!--
-            <ul>
-                <li>Algorithms: recursion, divide-and-conquer, backtracking, dynamic programming</li>
-                <li>Binary trees: concepts, representations and traversals, heaps, search trees, 2-3-4 trees, red-black trees</li>
-                <li>Associative structures: sets, maps, hash tables</li>
-                <li>Graphs: concepts, representations and traversals</li> 
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science</span>
-            <!--
-            <ul>
-                <li>Sets, Sequences, and Functions</li>
-                <li>Elementary Logic – Proofs</li>  
-                <li>Relations</li>
-                <li>Induction and Recursion – Algorithm Analysis</li> 
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Computer Organization & Assembly Language</span>
-            <!--
-            <ul>
-                <li>Data Representation</li>
-                <li>Elements of Assembly Language</li>
-                <li>Input/Output</li>
-                <li>Branches, Loops, Arrays, Procedures</li>
-                <li>Bit Manipulation, String Operations, Floating Point Operations</li>
-                <li>Boolean Algebra and Gates</li>
-                <li>Combinational Devices</li>
-                <li>Arithmetic Functions and Circuits</li>
-                <li>Sequential Circuit Analysis & Design</li>
-                <li>Registers, Counters, and Memory</li>
-                <li>Programmable Logic Devices</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design</span>
-            <!--
-            <ul>
-                <li>Randomized algorithms</li>
-                <li>Divide and conquer</li>
-                <li>Greedy algorithms</li>
-                <li>Dynamic programming</li>
-                <li>Graph algorithms</li>
-                <li>NP-completeness and approximation algorithms</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Software Engineering</span>
-            <!--
-            <ul>
-                <li>Software Life Cycle Models</li>
-                <li>Software Process</li>
-                <li>Software Teams</li>
-                <li>Introduction to Testing</li>
-                <li>Software Project Planning and Estimating</li>
-                <li>Requirements and UML</li>
-                <li>Object-oriented Analysis and UML</li>
-                <li>Modules and Design</li>
-                <li>Reuse and Portability</li>
-                <li>Implementation</li>
-                <li>Integration and Testing</li>
-                <li>Maintenance</li>
-                <li>Special Topics (e.g. Software Architecture, User Interface Design)</li> 
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Foundations of Computer Science 2</span>
-            <!--
-            <ul>
-                <li>Elementary Logic</li>
-                <li>Predicate Logic</li>
-                <li>Discrete Probability</li>
-                <li>Order Relations</li>
-                <li>Regular Languages and Finite Automata</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Advanced Database Systems</span>
-            <!--
-            <ul>
-                <li>Entity-Relationship Model</li>
-                <li>Relational Data Model and Relational Algebra</li>
-                <li>SQL Query Language</li>
-                <li>Relational Database Design Including Functional Dependencies and Normalization</li>
-                <li>Application Design and Development</li>
-                <li>XML</li> 
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Algorithm Analysis & Design 2</span>
-            <!--
-            <ul>
-                <li>Randomized algorithms</li>
-                <li>Divide and conquer</li>
-                <li>Greedy algorithms</li>
-                <li>Dynamic programming</li>
-                <li>Graph algorithms</li>
-                <li>NP-completeness and approximation algorithms</li> 
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Principles of XML Databases</span>
-                <!--
-                <ul>
-                    <li>XML Structure and Schema</li>
-                    <li>Querying with XPATH, XQUERY</li>
-                </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Theory of Computation</span>
-            <!--
-            <ul>
-                <li>Finite Automata</li>
-                <li>Pushdown Automata and Context-Free Languages</li>
-                <li>Turing Machines and Effective Computability</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Operating Systems</span>
-            <!--
-            <ul>
-                <li>Process and Thread Management, Scheduling, Synchronization and Deadlocks</li>
-                <li>Memory Management (Main Memory and Virtual Memory)</li>
-                <li>File Management, I/O Management</li>
-                <li>Protection and Security</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Principles of Computer Networks</span>
-            <!--
-            <ul>
-                <li>Communications, Standards and protocols</li>
-                <li>Network models</li>
-                <li>Hop-to-hop mechanisms: Data and signals. Digital transmission. Bandwidth utilization, Transmission media and switching, Error detection and correction.</li>
-                <li>Host-to-host mechanisms: Data link control and Multiple Access. Wired LAN and connecting LANs. Logical addressing and Internet protocol. Address mapping, error reporting and multicasting. Routing of IP packets and packet switching</li>
-                <li>Simulator Modeling: Network programming - simulation of computer networking</li>
-            </ul> -->
             </li>
             <li><span style="font-weight:700; font-style:italic">Big Data & Machine Learning</span>
-                <!--
-                <ul>
-                    <li>Data processing with Hadoop (map/reduce)</li>
-                    <li>Introduction to Machine Learning approaches: Support Vector Machine, Decision Trees and Random Forests, Deep Learning and Neural Networks</li>
-                    <li>Project:  Implementation of Support Vector Machine</li>
-                </ul> -->
             </li>
         </ul>
 
@@ -217,19 +194,19 @@
         <ul style="list-style-type: square">
             <li>
             <span style="font-weight:700; font-style:italic">Inmar, Inc.</span> (2015 - Current)
-                Software engineer on an Agile development team.  Built a variety of new single page web applications and APIs to provide SaaS products to serve internal and external business users and software developers.  Fullstack development on complex microservices-based software system.
+                Software Engineer
             </li>
             <li>
             <span style="font-weight:700; font-style:italic">Joyce Engineering, Inc.</span> (2004 - 2015)
-                Senior Civil/Environmental Engineer specializaing in solid waste management, landfill design, air permitting and compliance.
+                Senior Civil/Environmental Engineer
             </li>
             <li>
             <span style="font-weight:700; font-style:italic">North Carolina State University</span> (2001 - 2004)
-                Research assistant in Dept. of Civil/Environmental Engineering.
+                Research Assistant
             </li>
             <li>
             <span style="font-weight:700; font-style:italic">Cleveland Indians</span> (1999 - 2001)
-                Minor League baseball pitcher for Mahoning Valley Scrappers, Columbus RedStixx and Kinston Indians.
+                Minor League baseball pitcher
             </li>
     </div>
 </template>
